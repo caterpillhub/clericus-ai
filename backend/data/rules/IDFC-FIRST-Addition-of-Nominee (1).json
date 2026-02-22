@@ -1,0 +1,157 @@
+{
+  "form_id": "IDFC_NOMINEE_ADDITION_DA1",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter today's date in DD-MM-YYYY format.",
+      "rejections": [
+        "Date is missing",
+        "Date is in the future"
+      ]
+    },
+    "APPLICANT_NAMES": {
+      "title": "Depositor Name(s)",
+      "mandatory": true,
+      "instruction": "Write the full name(s) of the account holder(s) who are making this nomination.",
+      "rejections": [
+        "Applicant name missing"
+      ]
+    },
+    "APPLICANT_ADDRESS": {
+      "title": "Depositor Address",
+      "mandatory": true,
+      "instruction": "Write your current residential address, including City, State, and Pin Code.",
+      "rejections": [
+        "Address incomplete"
+      ]
+    },
+    "NOMINEE_NAME": {
+      "title": "Nominee Name",
+      "mandatory": true,
+      "instruction": "Write the full name of the person you want to receive the money in the event of death.",
+      "rejections": [
+        "Nominee name missing"
+      ]
+    },
+    "NOMINEE_RELATION": {
+      "title": "Relationship with Depositor",
+      "mandatory": true,
+      "instruction": "Write how the nominee is related to you (e.g., Spouse, Son, Mother).",
+      "rejections": [
+        "Relationship missing"
+      ]
+    },
+    "NOMINEE_DOB": {
+      "title": "Nominee Date of Birth",
+      "mandatory": true,
+      "instruction": "Enter the nominee's Date of Birth. This is crucial to determine if they are a minor.",
+      "rejections": [
+        "DOB missing"
+      ]
+    },
+    "NOMINEE_ADDRESS": {
+      "title": "Nominee Address",
+      "mandatory": true,
+      "instruction": "Write the nominee's full address. If they live with you, you can write 'Same as Applicant'.",
+      "rejections": [
+        "Nominee address missing"
+      ]
+    },
+    "NOMINEE_CONTACT": {
+      "title": "Nominee Mobile Number",
+      "mandatory": false,
+      "instruction": "Enter the nominee's mobile number for contact purposes.",
+      "rejections": []
+    },
+    "NATURE_OF_DEPOSIT": {
+      "title": "Nature of Deposit",
+      "mandatory": true,
+      "instruction": "Write the type of account you are adding a nominee to. \nCommon examples include: \n1. 'Savings Account' \n2. 'Fixed Deposit' (or FD) \n3. 'Recurring Deposit' (or RD) \n4. 'Current Account'",
+      "rejections": [
+        "Nature of deposit missing"
+      ]
+    },
+    "DISTINGUISHING_NO": {
+      "title": "Distinguishing No. / Account No.",
+      "mandatory": true,
+      "instruction": "Enter the specific Account Number or Deposit Certificate Number for which you are adding this nomination.",
+      "rejections": [
+        "Account/Certificate number missing"
+      ]
+    },
+    "ADDITIONAL_DETAILS": {
+      "title": "Additional Details",
+      "mandatory": false,
+      "instruction": "If there are any other details to identify the deposit (like a specific branch name or receipt number), write them here. Otherwise, leave blank.",
+      "rejections": []
+    },
+    "GUARDIAN_DETAILS": {
+      "title": "Guardian Details (If Nominee is Minor)",
+      "mandatory": false,
+      "instruction": "FILL THIS ONLY IF THE NOMINEE IS UNDER 18. You must appoint an adult to receive the money on the minor's behalf. Enter their Name, Address, and Age.",
+      "rejections": [
+        "Nominee is minor (based on DOB) but Guardian details are missing",
+        "Guardian is also a minor"
+      ]
+    },
+    "SIGNATURE_1": {
+      "title": "Signature of First Depositor",
+      "mandatory": true,
+      "instruction": "The primary account holder must sign here. If using a thumb impression, you must also fill the Witness sections below.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch"
+      ]
+    },
+    "SIGNATURE_2": {
+      "title": "Signature of Second Depositor",
+      "mandatory": false,
+      "instruction": "If the account is held jointly, the second holder must sign here.",
+      "rejections": [
+        "Signature missing for joint account"
+      ]
+    },
+    "SIGNATURE_3": {
+      "title": "Signature of Third Depositor",
+      "mandatory": false,
+      "instruction": "If there is a third holder, they must sign here.",
+      "rejections": []
+    },
+    "WITNESS_1": {
+      "title": "Witness 1 Details",
+      "mandatory": false,
+      "instruction": "REQUIRED ONLY IF THUMB IMPRESSION IS USED. A witness must sign and provide their name and address to attest the thumb impression.",
+      "rejections": [
+        "Thumb impression used but witness missing"
+      ]
+    },
+    "WITNESS_2": {
+      "title": "Witness 2 Details",
+      "mandatory": false,
+      "instruction": "REQUIRED ONLY IF THUMB IMPRESSION IS USED. A second witness must sign and provide their name and address.",
+      "rejections": [
+        "Thumb impression used but second witness missing"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "This section is to be completed by bank officials only, including service request number, employee details, and branch code.",
+      "rejections": [
+        "Customer-filled bank use only section"
+      ]
+    }
+  }
+}

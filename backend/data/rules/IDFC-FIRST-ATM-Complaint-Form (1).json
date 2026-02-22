@@ -1,0 +1,147 @@
+{
+  "form_id": "IDFC_ATM_COMPLAINT_FORM",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "BRANCH_DETAILS": {
+      "title": "Branch Details",
+      "mandatory": true,
+      "instruction": "Write the name of the Bank, the specific Branch name, and the City where you are submitting this complaint form.",
+      "rejections": [
+        "Bank name missing",
+        "Branch name missing",
+        "City missing"
+      ]
+    },
+    "CUST_NAME": {
+      "title": "Customer Name",
+      "mandatory": true,
+      "instruction": "Write your full name as it appears on your bank account.",
+      "rejections": [
+        "Name missing"
+      ]
+    },
+    "ACCOUNT_NO": {
+      "title": "Account Number",
+      "mandatory": true,
+      "instruction": "Enter the bank account number linked to the card you used.",
+      "rejections": [
+        "Account number missing",
+        "Account number mismatch with records"
+      ]
+    },
+    "CARD_NO": {
+      "title": "Debit/ATM Card Number",
+      "mandatory": true,
+      "instruction": "Enter the 16-digit number printed on the card used for the failed transaction.",
+      "rejections": [
+        "Card number missing",
+        "Card number is not 16 digits"
+      ]
+    },
+    "ATM_ID_LOC": {
+      "title": "ATM ID / Location",
+      "mandatory": true,
+      "instruction": "Write the ATM ID (usually found on the machine or the slip). If you don't have the ID, write the exact location (e.g., 'Main Market Branch ATM').",
+      "rejections": [
+        "ATM ID/Location missing"
+      ]
+    },
+    "ATM_BANK_NAME": {
+      "title": "ATM Bank Name",
+      "mandatory": true,
+      "instruction": "Write the name of the bank that owns the ATM machine where you faced the issue.",
+      "rejections": [
+        "ATM Bank Name missing"
+      ]
+    },
+    "COMPLAINT_AMT_REQ": {
+      "title": "Amount Requested",
+      "mandatory": false,
+      "instruction": "How much money did you TRY to withdraw?",
+      "rejections": [
+        "Amount missing for cash withdrawal complaint"
+      ]
+    },
+    "COMPLAINT_AMT_DISBURSED": {
+      "title": "Amount Actually Disbursed",
+      "mandatory": false,
+      "instruction": "How much cash ACTUALLY came out of the machine? (Write '0' if no cash came out).",
+      "rejections": []
+    },
+    "COMPLAINT_AMT_DEBITED": {
+      "title": "Amount Debited",
+      "mandatory": false,
+      "instruction": "How much money was cut from your account balance?",
+      "rejections": []
+    },
+    "COMPLAINT_AMT_DISPUTED": {
+      "title": "Amount Disputed",
+      "mandatory": false,
+      "instruction": "What is the total amount you are claiming? (This is usually the difference between what was cut and what you received).",
+      "rejections": [
+        "Disputed amount is zero or missing"
+      ]
+    },
+    "TRANS_DATE": {
+      "title": "Date of Transaction",
+      "mandatory": true,
+      "instruction": "Enter the date when the problem occurred (DD-MM-YYYY).",
+      "rejections": [
+        "Date missing",
+        "Date is in the future"
+      ]
+    },
+    "TRANS_NO_TIME": {
+      "title": "Transaction No. and Time",
+      "mandatory": false,
+      "instruction": "Enter the Transaction Reference Number (from SMS or slip) and the approximate Time of the incident.",
+      "rejections": []
+    },
+    "CARD_CAPTURE_STATUS": {
+      "title": "Card Captured by ATM?",
+      "mandatory": false,
+      "instruction": "Tick 'Yes' if the machine swallowed your card and did not return it. Otherwise, tick 'No'.",
+      "rejections": []
+    },
+    "OTHER_COMPLAINTS": {
+      "title": "Other Complaints",
+      "mandatory": false,
+      "instruction": "If you have a different issue (not cash or card capture), describe it here.",
+      "rejections": []
+    },
+    "SIGNATURE_DATE": {
+      "title": "Date of Complaint",
+      "mandatory": true,
+      "instruction": "Enter today's date.",
+      "rejections": [
+        "Date missing"
+      ]
+    },
+    "CONTACT_NO": {
+      "title": "Contact Number",
+      "mandatory": true,
+      "instruction": "Enter your mobile number so the bank can contact you regarding this complaint.",
+      "rejections": [
+        "Mobile number missing"
+      ]
+    },
+    "SIGNATURE": {
+      "title": "Customer Signature",
+      "mandatory": true,
+      "instruction": "Sign here to officially lodge the complaint.",
+      "rejections": [
+        "Signature missing"
+      ]
+    }
+  }
+}

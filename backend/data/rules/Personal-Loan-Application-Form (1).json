@@ -1,0 +1,291 @@
+{
+  "form_id": "IDFC_PERSONAL_LOAN_APP_RESIDENT",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter the date of application in DD-MM-YYYY format.\nExample: '25-12-2023'",
+      "rejections": [
+        "Date missing",
+        "Future date entered"
+      ]
+    },
+    "STAFF_STATUS": {
+      "title": "IDFC FIRST Bank Staff?",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' if you are an employee of IDFC FIRST Bank. Otherwise, tick 'No'.",
+      "rejections": [
+        "Selection missing"
+      ]
+    },
+    "LOAN_PURPOSE": {
+      "title": "Purpose of Personal Loan",
+      "mandatory": true,
+      "instruction": "Tick the reason for the loan (e.g., 'Travel', 'Medical', 'Wedding'). If 'Others', specify the reason.\nExample: 'Renovation'",
+      "rejections": [
+        "Purpose not selected"
+      ]
+    },
+    "LOAN_AMOUNT": {
+      "title": "Loan Amount",
+      "mandatory": true,
+      "instruction": "Enter the exact loan amount you are requesting in Rupees.\nExample: '5,00,000'",
+      "rejections": [
+        "Amount missing"
+      ]
+    },
+    "LOAN_TENURE": {
+      "title": "Desired Tenure (Months)",
+      "mandatory": true,
+      "instruction": "Tick the number of months you want to repay the loan over.\nOptions: 12, 24, 36, 48, 60.",
+      "rejections": [
+        "Tenure not selected"
+      ]
+    },
+    "APPLICANT_TYPE": {
+      "title": "Applicant Type",
+      "mandatory": true,
+      "instruction": "Tick 'Applicant' if you are the primary borrower. Tick 'Co-applicant' if you are joining an existing application.",
+      "rejections": [
+        "Type not selected"
+      ]
+    },
+    "EXISTING_FINANCE": {
+      "title": "Existing Finance with IDFC?",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' if you already have a loan with IDFC. If Yes, provide the 'Application Reference No'.",
+      "rejections": [
+        "Yes selected but Ref No. missing"
+      ]
+    },
+    "C_KYC_NO": {
+      "title": "C-KYC Number",
+      "mandatory": false,
+      "instruction": "Enter your Central KYC Registry number if available.\nExample: '10002000300040'",
+      "rejections": []
+    },
+    "APPLICANT_NAME": {
+      "title": "Applicant Name",
+      "mandatory": true,
+      "instruction": "Enter your First, Middle, and Last Name exactly as per your ID proof.\nExample: 'RAHUL KUMAR SHARMA'",
+      "rejections": [
+        "Name missing",
+        "Name mismatch with OVD"
+      ]
+    },
+    "FATHER_SPOUSE_NAME": {
+      "title": "Father's / Spouse's Name",
+      "mandatory": true,
+      "instruction": "Enter the First, Middle, and Last Name of your Father or Spouse.\nExample: 'MOHAN LAL SHARMA'",
+      "rejections": [
+        "Name missing"
+      ]
+    },
+    "MOTHER_NAME": {
+      "title": "Mother's Name",
+      "mandatory": true,
+      "instruction": "Enter your Mother's First, Middle, and Last Name.\nExample: 'SUNITA DEVI'",
+      "rejections": [
+        "Mother's name missing"
+      ]
+    },
+    "PHOTO_SIGN": {
+      "title": "Photograph & Signature",
+      "mandatory": true,
+      "instruction": "Paste a recent colour photograph in the box and sign ACROSS it.",
+      "rejections": [
+        "Photo missing",
+        "Signature across photo missing"
+      ]
+    },
+    "PAN_NO": {
+      "title": "PAN Number",
+      "mandatory": true,
+      "instruction": "Enter your 10-character Permanent Account Number.\nExample: 'ABCDE1234F'",
+      "rejections": [
+        "PAN missing"
+      ]
+    },
+    "AADHAAR_NO": {
+      "title": "Aadhaar Number",
+      "mandatory": false,
+      "instruction": "Enter your 12-digit Aadhaar Card Number (Optional but recommended).",
+      "rejections": []
+    },
+    "DOB": {
+      "title": "Date of Birth",
+      "mandatory": true,
+      "instruction": "Enter your Date of Birth in DD-MM-YYYY format.\nExample: '15-08-1985'",
+      "rejections": [
+        "DOB missing",
+        "Applicant is a minor"
+      ]
+    },
+    "EMAIL_ID": {
+      "title": "E-mail ID",
+      "mandatory": true,
+      "instruction": "Enter your personal email address for correspondence.\nExample: 'rahul.sharma@email.com'",
+      "rejections": [
+        "Email missing",
+        "Invalid email format"
+      ]
+    },
+    "QUALIFICATION": {
+      "title": "Qualification",
+      "mandatory": true,
+      "instruction": "Tick your highest educational qualification (e.g., 'Graduate', 'Post Graduate').",
+      "rejections": [
+        "Qualification not selected"
+      ]
+    },
+    "CURRENT_ADDRESS_DETAILS": {
+      "title": "Current Residential Address",
+      "mandatory": true,
+      "instruction": "Enter your full current address including Flat/House No, Building, Street, Landmark, City, State, and Pin Code.\nExample: 'Flat 101, Galaxy Apts, MG Road, Mumbai, 400001'",
+      "rejections": [
+        "Address incomplete",
+        "Pin code missing"
+      ]
+    },
+    "RESIDENCE_TYPE": {
+      "title": "Residence Type",
+      "mandatory": true,
+      "instruction": "Tick the ownership status of your current home: 'Rented', 'Self-owned', 'Parental', or 'Company Provided'.",
+      "rejections": [
+        "Residence type not selected"
+      ]
+    },
+    "PERM_ADDRESS_DETAILS": {
+      "title": "Permanent Address",
+      "mandatory": true,
+      "instruction": "If different from current address, fill this section. If same, tick 'Same as Current Residence Address'.",
+      "rejections": [
+        "Address missing when 'Same as...' is unchecked"
+      ]
+    },
+    "RELATED_TO_DIRECTOR": {
+      "title": "Relation to Director/Senior Officer",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' if you are a relative of any IDFC Bank Director or Senior Officer. Otherwise, tick 'No'.",
+      "rejections": [
+        "Selection missing"
+      ]
+    },
+    "OCCUPATION_TYPE": {
+      "title": "Occupation",
+      "mandatory": true,
+      "instruction": "Tick your employment type: 'Salaried' (if you have a job) or 'Self Employed' (if you run a business).",
+      "rejections": [
+        "Occupation not selected"
+      ]
+    },
+    "COMPANY_DETAILS": {
+      "title": "Company Name & Type",
+      "mandatory": true,
+      "instruction": "Enter the name of your employer or business. Tick the entity type (e.g., 'Pvt Ltd', 'Proprietorship').\nExample: 'INFOSYS LTD'",
+      "rejections": [
+        "Company name missing"
+      ]
+    },
+    "OFFICE_ADDRESS": {
+      "title": "Office Address",
+      "mandatory": true,
+      "instruction": "Enter your full work address including Pin Code and Office Phone Number.",
+      "rejections": [
+        "Office address missing"
+      ]
+    },
+    "INCOME_DETAILS_SALARIED": {
+      "title": "Income (For Salaried)",
+      "mandatory": false,
+      "instruction": "Fill ONLY if Salaried. Enter Designation, Department, and Net Monthly Take Home Salary.\nExample: 'Manager', 'IT', '75000'",
+      "rejections": [
+        "Salaried selected but income details missing"
+      ]
+    },
+    "INCOME_DETAILS_SELF_EMP": {
+      "title": "Income (For Self-Employed)",
+      "mandatory": false,
+      "instruction": "Fill ONLY if Self-Employed. Enter Date of Incorporation and Annual Income.\nExample: '10-04-2015', '12,00,000'",
+      "rejections": [
+        "Self-Employed selected but income details missing"
+      ]
+    },
+    "GST_DETAILS": {
+      "title": "GST Declaration",
+      "mandatory": true,
+      "instruction": "Tick if you are GST registered. If Yes, enter your GSTIN Number.\nExample: '27ABCDE1234F1Z5'",
+      "rejections": [
+        "GST Registered 'Yes' but GSTIN missing"
+      ]
+    },
+    "REPAYMENT_MODE": {
+      "title": "Preferred Repayment Mode",
+      "mandatory": true,
+      "instruction": "Tick how you will pay monthly EMIs: 'NACH' (Auto-debit), 'PDC' (Cheques), or 'SI' (Standing Instruction).",
+      "rejections": [
+        "Mode not selected"
+      ]
+    },
+    "BANK_ACC_DETAILS": {
+      "title": "Repayment Bank Account",
+      "mandatory": true,
+      "instruction": "Enter the details of the bank account from which EMIs will be paid: Bank Name, Account Number, and Type (Savings/Current).",
+      "rejections": [
+        "Bank details missing"
+      ]
+    },
+    "REFERENCE_1": {
+      "title": "Reference 1",
+      "mandatory": true,
+      "instruction": "Provide Name, Relationship, and Mobile Number of a person not living with you.\nExample: 'AMIT SINGH, COLLEAGUE, 9876543210'",
+      "rejections": [
+        "Reference 1 details incomplete"
+      ]
+    },
+    "REFERENCE_2": {
+      "title": "Reference 2",
+      "mandatory": true,
+      "instruction": "Provide details for a second reference person.",
+      "rejections": [
+        "Reference 2 details incomplete"
+      ]
+    },
+    "DECLARATION_SIGNATURE": {
+      "title": "Applicant Signature",
+      "mandatory": true,
+      "instruction": "Sign here to confirm all details are true and authorize the bank to check your credit history.",
+      "rejections": [
+        "Signature missing"
+      ]
+    },
+    "DOCUMENTS_REQUIRED": {
+      "title": "Supporting Documents",
+      "mandatory": true,
+      "instruction": "PAN/Form 60, photo identity proof, address proof, income proof, and business proof (where applicable) must be submitted. Requirements may vary by scheme.",
+      "rejections": [
+        "Mandatory supporting documents not submitted",
+        "Income proof missing"
+      ]
+    },
+    "OFFICE_USE": {
+      "title": "Office Use Section",
+      "mandatory": false,
+      "instruction": "DSA codes, verification details, and internal certifications are to be completed by bank officials only.",
+      "rejections": [
+        "Customer filled office-use-only fields"
+      ]
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "form_id": "IDFC_STANDING_INSTRUCTION_FORM",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Request",
+      "mandatory": true,
+      "instruction": "Enter the date you are submitting this form in DD-MM-YYYY format.\nExample: '25-12-2023'",
+      "rejections": [
+        "Date missing",
+        "Future date entered"
+      ]
+    },
+    "ACCOUNT_NO": {
+      "title": "Your Account Number",
+      "mandatory": true,
+      "instruction": "Enter your IDFC Bank account number from which the money should be deducted.\nExample: '100012345678'",
+      "rejections": [
+        "Account number missing"
+      ]
+    },
+    "CUST_NAME": {
+      "title": "Customer Name",
+      "mandatory": true,
+      "instruction": "Enter your full name as per bank records.\nExample: 'RAJESH KUMAR'",
+      "rejections": [
+        "Name missing"
+      ]
+    },
+    "REQ_TYPE_SETUP": {
+      "title": "Section A: Request / Setup Details",
+      "mandatory": false,
+      "instruction": "Fill this section ONLY if you want to START a new standing instruction. (Leave blank if cancelling).",
+      "rejections": []
+    },
+    "BENEFICIARY_NAME": {
+      "title": "Beneficiary Name",
+      "mandatory": false,
+      "instruction": "Enter the name of the person/company receiving the money.\nExample: 'HDFC LOAN ACCOUNT' or 'SUNITA SHARMA'",
+      "rejections": [
+        "Setup selected but Beneficiary Name missing"
+      ]
+    },
+    "BENEFICIARY_ACC_NO": {
+      "title": "Beneficiary Account Number",
+      "mandatory": false,
+      "instruction": "Enter the account number where the money will be sent.\nExample: '001122334455'",
+      "rejections": [
+        "Setup selected but Beneficiary Account missing"
+      ]
+    },
+    "AMOUNT": {
+      "title": "Amount (in Figures)",
+      "mandatory": false,
+      "instruction": "Enter the exact amount to be transferred each time.\nExample: '15,000'",
+      "rejections": [
+        "Setup selected but Amount missing"
+      ]
+    },
+    "AMOUNT_WORDS": {
+      "title": "Amount (in Words)",
+      "mandatory": false,
+      "instruction": "Write the amount in words.\nExample: 'FIFTEEN THOUSAND ONLY'",
+      "rejections": [
+        "Amount in words missing",
+        "Mismatch with figures"
+      ]
+    },
+    "IFSC_CODE": {
+      "title": "IFSC Code",
+      "mandatory": false,
+      "instruction": "Enter the 11-digit IFSC code of the Beneficiary Bank.\nExample: 'HDFC0001234'",
+      "rejections": [
+        "Setup selected but IFSC missing",
+        "Invalid IFSC format"
+      ]
+    },
+    "START_DATE": {
+      "title": "Start Date",
+      "mandatory": false,
+      "instruction": "Enter the date when the first payment should happen (DD-MM-YYYY).\nExample: '05-02-2024'",
+      "rejections": [
+        "Setup selected but Start Date missing"
+      ]
+    },
+    "END_DATE": {
+      "title": "End Date",
+      "mandatory": false,
+      "instruction": "Enter the date when the last payment should happen (DD-MM-YYYY).\nExample: '05-02-2025'",
+      "rejections": [
+        "End date is before Start date"
+      ]
+    },
+    "FREQUENCY": {
+      "title": "Frequency",
+      "mandatory": false,
+      "instruction": "Tick how often the payment should be made.\nOptions: 'Weekly', 'Monthly', 'Quarterly', etc.",
+      "rejections": [
+        "Setup selected but Frequency not ticked"
+      ]
+    },
+    "REQ_TYPE_CANCEL": {
+      "title": "Section B: Cancellation Details",
+      "mandatory": false,
+      "instruction": "Fill this section ONLY if you want to STOP an existing standing instruction.",
+      "rejections": []
+    },
+    "CANCEL_BENEFICIARY_NAME": {
+      "title": "Beneficiary Name (For Cancellation)",
+      "mandatory": false,
+      "instruction": "Enter the name of the beneficiary for the instruction you want to stop.\nExample: 'SUNITA SHARMA'",
+      "rejections": [
+        "Cancellation selected but Beneficiary Name missing"
+      ]
+    },
+    "CANCEL_BENEFICIARY_ACC": {
+      "title": "Beneficiary Account No (For Cancellation)",
+      "mandatory": false,
+      "instruction": "Enter the account number of the beneficiary to identify the instruction to stop.\nExample: '001122334455'",
+      "rejections": [
+        "Cancellation selected but Account No missing"
+      ]
+    },
+    "CANCEL_REASON": {
+      "title": "Reason for Cancellation",
+      "mandatory": false,
+      "instruction": "Briefly state why you are cancelling.\nExample: 'LOAN CLOSED' or 'SERVICE STOPPED'",
+      "rejections": []
+    },
+    "SIGNATURE_1": {
+      "title": "1st Account Holder Signature",
+      "mandatory": true,
+      "instruction": "The primary account holder must sign here to authorize the setup or cancellation.",
+      "rejections": [
+        "Signature missing"
+      ]
+    },
+    "SIGNATURE_2": {
+      "title": "2nd Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If the account is joint, the second holder must sign here.",
+      "rejections": [
+        "Joint account but 2nd signature missing"
+      ]
+    },
+    "SIGNATURE_3": {
+      "title": "3rd Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If there is a third holder, they must sign here.",
+      "rejections": []
+    }
+  }
+}

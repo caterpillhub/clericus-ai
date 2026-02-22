@@ -1,0 +1,243 @@
+{
+  "form_id": "IDFC_LOCKER_APP_MULTIPLE_HIRER",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "PRIMARY_CUST_NAME": {
+      "title": "Primary Customer Name",
+      "mandatory": true,
+      "instruction": "Write the full legal name of the first applicant. \nExample: 'RAJESH KUMAR SHARMA'",
+      "rejections": [
+        "Name missing",
+        "Name does not match ID proof"
+      ]
+    },
+    "PRIMARY_CUST_ID": {
+      "title": "Primary Customer ID",
+      "mandatory": true,
+      "instruction": "Enter the unique Customer ID assigned to the primary applicant by the bank. \nExample: '12345678'",
+      "rejections": [
+        "Customer ID missing"
+      ]
+    },
+    "LOCKER_NO": {
+      "title": "Locker Number",
+      "mandatory": true,
+      "instruction": "Enter the specific locker number assigned to you. \nExample: 'A-104' or '12B'",
+      "rejections": [
+        "Locker number missing"
+      ]
+    },
+    "LOCKER_SIZE": {
+      "title": "Locker Size",
+      "mandatory": true,
+      "instruction": "Specify the size of the locker you are hiring. \nExamples: 'Small', 'Medium', 'Large', 'Extra Large'",
+      "rejections": [
+        "Locker size missing"
+      ]
+    },
+    "LOCKER_KEY_NO": {
+      "title": "Locker Key Number",
+      "mandatory": true,
+      "instruction": "Enter the specific number engraved on the locker key provided to you. \nExample: 'KEY-998'",
+      "rejections": [
+        "Key number missing"
+      ]
+    },
+    "RENT_RECOVERY_ACC_NO": {
+      "title": "Rent Recovery Account Number",
+      "mandatory": true,
+      "instruction": "Enter the bank account number from which the annual rent will be automatically deducted. \nExample: '100050009000'",
+      "rejections": [
+        "Account number missing",
+        "Invalid account number format"
+      ]
+    },
+    "RENT_RECOVERY_NAME": {
+      "title": "Rent Recovery Account Holder Name",
+      "mandatory": true,
+      "instruction": "Write the name of the person who holds the rent recovery account. \nExample: 'RAJESH KUMAR SHARMA'",
+      "rejections": [
+        "Account holder name missing"
+      ]
+    },
+    "MODE_OF_OPERATION_E_S": {
+      "title": "Mode: Either or Survivor",
+      "mandatory": false,
+      "instruction": "Tick this box if any one of the holders can operate the locker independently, and upon death, the survivor gets access.",
+      "rejections": [
+        "Multiple conflicting modes selected"
+      ]
+    },
+    "MODE_OF_OPERATION_F_S": {
+      "title": "Mode: Former or Survivor",
+      "mandatory": false,
+      "instruction": "Tick this box if ONLY the first holder can operate it during their lifetime. The second holder gets access only after the first holder's death.",
+      "rejections": []
+    },
+    "MODE_OF_OPERATION_JOINT": {
+      "title": "Mode: Jointly",
+      "mandatory": false,
+      "instruction": "Tick this box if ALL holders must be present together to open the locker.",
+      "rejections": []
+    },
+    "MODE_OF_OPERATION_ANY_S": {
+      "title": "Mode: Anyone or Survivor",
+      "mandatory": false,
+      "instruction": "Tick this box if there are more than two holders, and any one of them can operate it independently.",
+      "rejections": []
+    },
+    "AGREEMENT_RENT_AMT": {
+      "title": "Annual Rent Amount",
+      "mandatory": true,
+      "instruction": "Enter the yearly rent amount in Rupees. \nExample: '3500/-'",
+      "rejections": [
+        "Rent amount missing"
+      ]
+    },
+    "NOMINATION_OPT_YES": {
+      "title": "Nomination: Yes",
+      "mandatory": false,
+      "instruction": "Tick this box if you want to appoint a nominee to receive the contents after death.",
+      "rejections": [
+        "Both Yes and No selected"
+      ]
+    },
+    "NOMINATION_OPT_NO": {
+      "title": "Nomination: No",
+      "mandatory": false,
+      "instruction": "Tick this box if you DO NOT want to appoint a nominee right now.",
+      "rejections": []
+    },
+    "NOMINEE_1_NAME": {
+      "title": "Nominee 1 Name",
+      "mandatory": false,
+      "instruction": "If Nomination is 'Yes', write the full name of the first nominee. \nExample: 'SUNITA SHARMA'",
+      "rejections": [
+        "Nomination is Yes but name missing"
+      ]
+    },
+    "NOMINEE_1_RELATION": {
+      "title": "Nominee 1 Relationship",
+      "mandatory": false,
+      "instruction": "Write how Nominee 1 is related to you. \nExamples: 'Spouse', 'Son', 'Mother'",
+      "rejections": [
+        "Relationship missing"
+      ]
+    },
+    "NOMINEE_1_DOB": {
+      "title": "Nominee 1 DOB",
+      "mandatory": false,
+      "instruction": "Enter the Date of Birth of Nominee 1 (DD-MM-YYYY).",
+      "rejections": [
+        "DOB missing"
+      ]
+    },
+    "NOMINEE_1_ADDRESS": {
+      "title": "Nominee 1 Address",
+      "mandatory": false,
+      "instruction": "Write the full address of Nominee 1.",
+      "rejections": [
+        "Address missing"
+      ]
+    },
+    "NOMINEE_1_GUARDIAN": {
+      "title": "Guardian for Nominee 1 (If Minor)",
+      "mandatory": false,
+      "instruction": "If Nominee 1 is under 18, write the Name and Address of their Guardian here.",
+      "rejections": [
+        "Nominee is minor but Guardian details missing"
+      ]
+    },
+    "NOMINEE_2_NAME": {
+      "title": "Nominee 2 Name",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if you have a second nominee (for joint accounts).",
+      "rejections": []
+    },
+    "WITNESS_1_DETAILS": {
+      "title": "Witness 1 Name & Address",
+      "mandatory": false,
+      "instruction": "Required ONLY if you use a Thumb Impression. Enter Witness 1's Name and Address.",
+      "rejections": [
+        "Thumb impression used but Witness 1 missing"
+      ]
+    },
+    "WITNESS_2_DETAILS": {
+      "title": "Witness 2 Name & Address",
+      "mandatory": false,
+      "instruction": "Required ONLY if you use a Thumb Impression. Enter Witness 2's Name and Address.",
+      "rejections": [
+        "Thumb impression used but Witness 2 missing"
+      ]
+    },
+    "SIGNATURE_1_PHOTO": {
+      "title": "1st Holder Photograph",
+      "mandatory": true,
+      "instruction": "Paste a recent colour photograph of the 1st Applicant here.",
+      "rejections": [
+        "Photograph missing"
+      ]
+    },
+    "SIGNATURE_1_SIGN": {
+      "title": "1st Holder Signature",
+      "mandatory": true,
+      "instruction": "Sign ACROSS the photograph and in the designated box below it.",
+      "rejections": [
+        "Signature missing",
+        "Signature across photo missing"
+      ]
+    },
+    "SIGNATURE_2_PHOTO": {
+      "title": "2nd Holder Photograph",
+      "mandatory": false,
+      "instruction": "Paste a recent colour photograph of the 2nd Applicant (if applicable).",
+      "rejections": [
+        "Joint account selected but 2nd photo missing"
+      ]
+    },
+    "SIGNATURE_2_SIGN": {
+      "title": "2nd Holder Signature",
+      "mandatory": false,
+      "instruction": "The 2nd Applicant must sign across their photograph and in the box below.",
+      "rejections": [
+        "Joint account selected but 2nd signature missing"
+      ]
+    },
+    "SIGNATURE_3_PHOTO": {
+      "title": "3rd Holder Photograph",
+      "mandatory": false,
+      "instruction": "Paste a recent colour photograph of the 3rd Applicant (if applicable).",
+      "rejections": []
+    },
+    "SIGNATURE_3_SIGN": {
+      "title": "3rd Holder Signature",
+      "mandatory": false,
+      "instruction": "The 3rd Applicant must sign across their photograph and in the box below.",
+      "rejections": []
+    },
+    "OFFICE_USE_CABINET_ID": {
+      "title": "Cabinet ID (Bank Use)",
+      "mandatory": false,
+      "instruction": "Bank Official Use Only: Enter the Cabinet ID where the locker is located. \nExample: 'CAB-05'",
+      "rejections": [
+        "Applicant filled Bank Use section"
+      ]
+    },
+    "OFFICE_USE_MASTER_KEY": {
+      "title": "Master Key ID (Bank Use)",
+      "mandatory": false,
+      "instruction": "Bank Official Use Only: Enter the Master Key ID. \nExample: 'MK-101'",
+      "rejections": []
+    }
+  }
+}

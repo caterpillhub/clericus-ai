@@ -1,0 +1,216 @@
+{
+  "form_id": "IDFC_LOCKER_APP_MULTIPLE_HIRER_BOX_WISE",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "PRIMARY_CUST_NAME": {
+      "title": "Primary Customer Name",
+      "mandatory": true,
+      "instruction": "Enter the full name of the first applicant in the box provided.\nExample: 'RAJESH KUMAR SHARMA'",
+      "rejections": [
+        "Name missing",
+        "Name does not match ID proof"
+      ]
+    },
+    "PRIMARY_CUST_ID": {
+      "title": "Primary Customer ID",
+      "mandatory": false,
+      "instruction": "Enter your unique 8-9 digit Customer ID in this box.\nExample: '10005678'",
+      "rejections": []
+    },
+    "LOCKER_NO": {
+      "title": "Locker No.",
+      "mandatory": true,
+      "instruction": "Write the specific locker number assigned to you in this box.\nExample: 'A-12' or 'L-105'",
+      "rejections": [
+        "Locker number missing"
+      ]
+    },
+    "LOCKER_SIZE": {
+      "title": "Locker Size",
+      "mandatory": true,
+      "instruction": "Specify the size classification of the locker in this box.\nExamples: 'SMALL', 'MEDIUM', 'LARGE', 'A', 'B'",
+      "rejections": [
+        "Locker size missing"
+      ]
+    },
+    "LOCKER_KEY_NO": {
+      "title": "Locker Key No.",
+      "mandatory": true,
+      "instruction": "Enter the unique number engraved on the locker key in this box.\nExample: 'K-204' or '998'",
+      "rejections": [
+        "Key number missing"
+      ]
+    },
+    "RENT_RECOVERY_ACC": {
+      "title": "Account for Rent Recovery",
+      "mandatory": true,
+      "instruction": "Enter the bank account number from which the annual rent will be deducted.\nExample: '100012345678'",
+      "rejections": [
+        "Account number missing",
+        "Invalid account number digits"
+      ]
+    },
+    "RENT_RECOVERY_NAME": {
+      "title": "Name of Account Holder (Rent Recovery)",
+      "mandatory": true,
+      "instruction": "Write the name of the person who owns the rent recovery account.\nExample: 'RAJESH KUMAR SHARMA'",
+      "rejections": [
+        "Account holder name missing"
+      ]
+    },
+    "MODE_OPERATION": {
+      "title": "Mode of Operation",
+      "mandatory": true,
+      "instruction": "Tick exactly ONE box to indicate how the locker will be operated.\nOptions:\n1. 'Either or Survivor' (Any one can open)\n2. 'Former or Survivor' (Only 1st holder can open during lifetime)\n3. 'Jointly' (All must be present)\n4. 'Anyone or Survivor'",
+      "rejections": [
+        "Mode not selected",
+        "Multiple modes selected"
+      ]
+    },
+    "AGREEMENT_RENT": {
+      "title": "Annual Rent Amount",
+      "mandatory": true,
+      "instruction": "In the agreement text, enter the annual rent amount in Rupees.\nExample: '3500'",
+      "rejections": [
+        "Rent amount missing"
+      ]
+    },
+    "NOMINATION_CHOICE": {
+      "title": "Nomination Selection",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' to add a nominee or 'No' to decline. (We recommend selecting 'Yes').",
+      "rejections": [
+        "Selection missing"
+      ]
+    },
+    "NOMINEE_1_NAME": {
+      "title": "Nominee 1 Name",
+      "mandatory": false,
+      "instruction": "If Nomination is 'Yes', write the 1st Nominee's full name.\nExample: 'SUNITA SHARMA'",
+      "rejections": [
+        "Nomination is Yes but name missing"
+      ]
+    },
+    "NOMINEE_1_ADDRESS": {
+      "title": "Nominee 1 Address",
+      "mandatory": false,
+      "instruction": "Write the full residential address of the 1st Nominee.\nExample: 'Flat 402, Lotus Apt, MG Road, Mumbai'",
+      "rejections": [
+        "Address missing"
+      ]
+    },
+    "NOMINEE_1_RELATION": {
+      "title": "Nominee 1 Relationship",
+      "mandatory": false,
+      "instruction": "Write the relationship of the 1st Nominee to the hirer.\nExamples: 'SPOUSE', 'FATHER', 'SON'",
+      "rejections": [
+        "Relationship missing"
+      ]
+    },
+    "NOMINEE_1_DOB": {
+      "title": "Nominee 1 Date of Birth",
+      "mandatory": false,
+      "instruction": "Enter the 1st Nominee's DOB in DD-MM-YYYY format.\nExample: '15-08-1985'",
+      "rejections": [
+        "DOB missing"
+      ]
+    },
+    "NOMINEE_2_NAME": {
+      "title": "Nominee 2 Name",
+      "mandatory": false,
+      "instruction": "Write the 2nd Nominee's name (if applicable for joint hirers).\nExample: 'RAHUL SHARMA'",
+      "rejections": []
+    },
+    "NOMINEE_2_ADDRESS": {
+      "title": "Nominee 2 Address",
+      "mandatory": false,
+      "instruction": "Write the full address of the 2nd Nominee.\nExample: 'Flat 402, Lotus Apt, MG Road, Mumbai'",
+      "rejections": []
+    },
+    "WITNESS_1": {
+      "title": "Witness 1 Details",
+      "mandatory": false,
+      "instruction": "REQUIRED ONLY FOR THUMB IMPRESSIONS. Enter Witness 1's Name and Address.\nExample: 'AMIT PATEL, 12 Gandhi Nagar, Delhi'",
+      "rejections": [
+        "Thumb impression used but witness missing"
+      ]
+    },
+    "WITNESS_2": {
+      "title": "Witness 2 Details",
+      "mandatory": false,
+      "instruction": "REQUIRED ONLY FOR THUMB IMPRESSIONS. Enter Witness 2's Name and Address.",
+      "rejections": [
+        "Thumb impression used but witness missing"
+      ]
+    },
+    "HOLDER_1_PHOTO": {
+      "title": "1st Holder Photograph",
+      "mandatory": true,
+      "instruction": "Paste a recent colour passport-size photograph of the 1st Holder in this box.",
+      "rejections": [
+        "Photograph missing"
+      ]
+    },
+    "HOLDER_1_SIGN": {
+      "title": "1st Holder Signature",
+      "mandatory": true,
+      "instruction": "The 1st Holder must sign ACROSS the photograph and in the signature box below it.",
+      "rejections": [
+        "Signature missing",
+        "Signature not across photograph"
+      ]
+    },
+    "HOLDER_2_PHOTO": {
+      "title": "2nd Holder Photograph",
+      "mandatory": false,
+      "instruction": "Paste a recent colour photograph of the 2nd Holder (if applicable).",
+      "rejections": [
+        "Joint account selected but 2nd photo missing"
+      ]
+    },
+    "HOLDER_2_SIGN": {
+      "title": "2nd Holder Signature",
+      "mandatory": false,
+      "instruction": "The 2nd Holder must sign ACROSS the photograph and in the signature box below it.",
+      "rejections": [
+        "Joint account selected but 2nd signature missing"
+      ]
+    },
+    "HOLDER_3_PHOTO": {
+      "title": "3rd Holder Photograph",
+      "mandatory": false,
+      "instruction": "Paste a recent colour photograph of the 3rd Holder (if applicable).",
+      "rejections": []
+    },
+    "HOLDER_3_SIGN": {
+      "title": "3rd Holder Signature",
+      "mandatory": false,
+      "instruction": "The 3rd Holder must sign ACROSS the photograph and in the signature box below it.",
+      "rejections": []
+    },
+    "OFFICE_USE_CABINET_ID": {
+      "title": "Cabinet ID (Bank Use)",
+      "mandatory": false,
+      "instruction": "Bank Official Use Only: Enter the Cabinet ID where the locker is located. \nExample: 'CAB-05'",
+      "rejections": [
+        "Applicant filled Bank Use section"
+      ]
+    },
+    "OFFICE_USE_MASTER_KEY": {
+      "title": "Master Key ID (Bank Use)",
+      "mandatory": false,
+      "instruction": "Bank Official Use Only: Enter the Master Key ID. \nExample: 'MK-101'",
+      "rejections": []
+    }
+  }
+}

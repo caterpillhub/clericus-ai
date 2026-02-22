@@ -1,0 +1,192 @@
+{
+  "form_id": "IDFC_EXISTING_CUST_DEPOSIT_APP_V2_REVISED",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "CUST_INFO_1": {
+      "title": "Primary Applicant Name & ID",
+      "mandatory": true,
+      "instruction": "Write the full name and Customer ID of the first account holder.",
+      "rejections": [
+        "Name missing",
+        "Customer ID missing"
+      ]
+    },
+    "CUST_INFO_2": {
+      "title": "Second Applicant Name & ID",
+      "mandatory": false,
+      "instruction": "If opening a joint FD, write the second person's name and Customer ID here.",
+      "rejections": [
+        "Name present but Customer ID missing"
+      ]
+    },
+    "CUST_INFO_3": {
+      "title": "Third Applicant Name & ID",
+      "mandatory": false,
+      "instruction": "If there is a third joint holder, write their details here.",
+      "rejections": []
+    },
+    "ENTITY_DETAILS": {
+      "title": "Entity Details (Non-Individuals Only)",
+      "mandatory": false,
+      "instruction": "If this deposit is for a business or organization, write the Entity's Customer ID and the specific Account Title you want on the FD.",
+      "rejections": [
+        "Entity details filled for individual applicant"
+      ]
+    },
+    "DEBIT_ACC_NO": {
+      "title": "Account Number to Debit",
+      "mandatory": true,
+      "instruction": "Enter the IDFC FIRST Bank account number from which the money should be taken to book this deposit.",
+      "rejections": [
+        "Account number missing",
+        "Account number mismatch"
+      ]
+    },
+    "DEBIT_SIGNATURES": {
+      "title": "Debit Account Signatures",
+      "mandatory": true,
+      "instruction": "All holders of the debit account must sign here exactly as per their original account opening form.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch with bank records"
+      ]
+    },
+    "DEPOSIT_TYPE_SELECT": {
+      "title": "Deposit Type Selection (Regular vs. Green)",
+      "mandatory": true,
+      "instruction": "Choose ONE: \n1. 'Regular Deposit': Standard FD with flexible renewal options.\n2. 'Green Deposit': Your money is used for eco-friendly projects (Green Finance). Note: Green Deposits have a fixed tenure and CANNOT be auto-renewed (they close automatically on maturity).",
+      "rejections": [
+        "Both Regular and Green selected",
+        "Neither selected"
+      ]
+    },
+    "REG_FD_AMOUNT": {
+      "title": "Regular FD Amount",
+      "mandatory": false,
+      "instruction": "If you chose Regular Deposit, write the amount you want to invest here.",
+      "rejections": [
+        "Amount missing when Regular FD selected"
+      ]
+    },
+    "REG_FD_TENURE": {
+      "title": "Regular FD Tenure",
+      "mandatory": false,
+      "instruction": "Write how long you want to keep the deposit (Years, Months, and Days). \nNote: If you select 'Tax Saver', the tenure MUST be exactly 5 years (lock-in period).",
+      "rejections": [
+        "Tenure missing",
+        "Tax Saver selected but tenure is not 5 years"
+      ]
+    },
+    "REG_FD_INTEREST_PAYOUT": {
+      "title": "Regular FD Interest Payout",
+      "mandatory": false,
+      "instruction": "Select how you want to receive interest: 'Cumulative' (paid at end) or 'Non-Cumulative' (paid Monthly/Quarterly).",
+      "rejections": [
+        "Payout frequency not selected for Non-Cumulative FD"
+      ]
+    },
+    "REG_FD_CATEGORY": {
+      "title": "Regular FD Category",
+      "mandatory": false,
+      "instruction": "Tick the category: 'Standard', 'Senior Citizen', or 'Tax Saver'.",
+      "rejections": [
+        "Tax Saver selected by Non-Individual"
+      ]
+    },
+    "GREEN_FD_DETAILS": {
+      "title": "Green Deposit Details",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if you selected 'Green Deposit'. \nConstraints: \n1. Minimum amount is ₹5,000.\n2. Maximum amount is ₹13 Crores.\n3. Maturity instruction is 'Auto Closure' only (cannot renew).",
+      "rejections": [
+        "Filled while Regular FD is selected",
+        "Amount is less than ₹5,000",
+        "Amount exceeds ₹13 Crores"
+      ]
+    },
+    "MATURITY_INSTRUCTIONS": {
+      "title": "Maturity Instructions",
+      "mandatory": true,
+      "instruction": "Tell the bank what to do when the FD expires: 'Renew Principal & Interest', 'Renew Principal only', or 'Payout everything'. \n(Note: If you chose Green Deposit, you MUST choose 'Payout/Auto Closure').",
+      "rejections": [
+        "Instruction missing",
+        "Conflicting instructions checked",
+        "Renewal selected for Green Deposit (Not allowed)"
+      ]
+    },
+    "RD_DETAILS": {
+      "title": "Recurring Deposit (RD) Details",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if you want to start an RD. Enter the Monthly Installment Amount and select the Tenure (e.g., 12 months).",
+      "rejections": [
+        "Installment amount missing for RD",
+        "Tenure not selected"
+      ]
+    },
+    "MODE_OF_OPERATION": {
+      "title": "Mode of Operation",
+      "mandatory": true,
+      "instruction": "Tick how the account will be operated (e.g., 'Singly', 'Either or Survivor', 'Jointly').",
+      "rejections": [
+        "Mode not selected"
+      ]
+    },
+    "TDS_OPTION": {
+      "title": "TDS (Tax) Preference",
+      "mandatory": true,
+      "instruction": "Select if you want tax deducted (TDS). If you are exempt, tick the box for 'Form 15G/15H' or 'Exempt' category.",
+      "rejections": [
+        "Option not selected",
+        "Form 15G/H selected but PAN missing"
+      ]
+    },
+    "NOMINEE_NAME": {
+      "title": "Nominee Name",
+      "mandatory": false,
+      "instruction": "Write the name of the person who should receive the money in case of death. (Leave blank if you do not want to add a nominee).",
+      "rejections": []
+    },
+    "NOMINEE_RELATION": {
+      "title": "Nominee Relationship & DOB",
+      "mandatory": false,
+      "instruction": "Write the nominee's relationship to you (e.g., Spouse, Father) and their Date of Birth.",
+      "rejections": [
+        "Relationship missing when name is provided"
+      ]
+    },
+    "NOMINEE_MINOR_GUARD": {
+      "title": "Guardian for Minor Nominee",
+      "mandatory": false,
+      "instruction": "If the nominee is under 18 (minor), you MUST provide the name and address of an adult Guardian.",
+      "rejections": [
+        "Nominee is minor but Guardian details missing"
+      ]
+    },
+    "FINAL_DECLARATION": {
+      "title": "Final Declaration Signatures",
+      "mandatory": true,
+      "instruction": "All applicants must sign at the bottom of the form to accept the terms and conditions.",
+      "rejections": [
+        "Signatures missing",
+        "Witness signature missing (if thumb impression used)"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "This section is to be completed by bank officials only, including product codes, branch codes, and campaign details.",
+      "rejections": [
+        "Customer-filled bank use only section"
+      ]
+    }
+  }
+}

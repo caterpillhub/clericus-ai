@@ -1,0 +1,221 @@
+{
+  "form_id": "IDFC_NEW_TO_BANK_FD_V8",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Application Date",
+      "mandatory": true,
+      "instruction": "Enter the date of form submission in DD-MM-YYYY format.\nExample: '25-01-2024'",
+      "rejections": [
+        "Date missing",
+        "Future date entered"
+      ]
+    },
+    "CUST_ID": {
+      "title": "Customer ID",
+      "mandatory": false,
+      "instruction": "If you already have a Customer ID, enter it here. Otherwise, leave blank.\nExample: '10001234'",
+      "rejections": []
+    },
+    "CKYC_NO": {
+      "title": "CKYC Number",
+      "mandatory": false,
+      "instruction": "Enter your 14-digit CKYC number if available.\nExample: '10002000300040'",
+      "rejections": []
+    },
+    "APPLICANT_NAME": {
+      "title": "Applicant Name",
+      "mandatory": true,
+      "instruction": "Enter your Title (Mr/Ms), First, Middle, and Last Name exactly as per your Identity Proof.\nExample: 'MR. RAHUL KUMAR SINGH'",
+      "rejections": [
+        "Name missing",
+        "Name mismatch with ID proof"
+      ]
+    },
+    "PERSONAL_DETAILS": {
+      "title": "Personal Details (DOB, Gender, Marital Status)",
+      "mandatory": true,
+      "instruction": "Enter Date of Birth (DD-MM-YYYY), tick Gender, and tick Marital Status.",
+      "rejections": [
+        "Date of Birth missing",
+        "Gender not selected",
+        "Marital Status not selected"
+      ]
+    },
+    "BIRTH_DETAILS": {
+      "title": "Place & Country of Birth",
+      "mandatory": true,
+      "instruction": "Enter the City and Country where you were born.\nExample: 'MUMBAI, INDIA'",
+      "rejections": [
+        "Place of birth missing"
+      ]
+    },
+    "TAX_RESIDENCY": {
+      "title": "Tax Residency (FATCA)",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if you are a tax resident of a country other than India. Enter Country and Tax ID Number (TIN).",
+      "rejections": [
+        "Tax resident of foreign country but TIN missing"
+      ]
+    },
+    "PARENT_SPOUSE_DETAILS": {
+      "title": "Parents / Spouse Name",
+      "mandatory": true,
+      "instruction": "Enter Father's Name (Mandatory if no PAN). Enter Mother's Name and Spouse Name (if applicable).\nExample: 'RAMESH SINGH'",
+      "rejections": [
+        "Father's name missing (when PAN is not provided)"
+      ]
+    },
+    "ID_PROOF_DETAILS": {
+      "title": "Identity Proof Details (PAN & Aadhaar)",
+      "mandatory": true,
+      "instruction": "Enter your PAN (10 chars) and Aadhaar (Last 4 digits).\nExample: PAN 'ABCDE1234F', Aadhaar 'XXXX XXXX 1234'",
+      "rejections": [
+        "PAN missing and Form 60 not attached"
+      ]
+    },
+    "PERMANENT_ADDRESS": {
+      "title": "Permanent Address (As per OVD)",
+      "mandatory": true,
+      "instruction": "Enter address exactly as on your proof document (OVD). Include Line 1, Line 2, City, State, and Pin Code.\nExample: 'FLAT 101, MG ROAD, PUNE, 411001'",
+      "rejections": [
+        "Address does not match OVD",
+        "Pin code missing"
+      ]
+    },
+    "CURRENT_ADDRESS": {
+      "title": "Current / Mailing Address",
+      "mandatory": true,
+      "instruction": "If different from Permanent Address, enter new address and attach 'Deemed OVD' (e.g., Utility Bill). If same, tick 'Same as Above'.",
+      "rejections": [
+        "Address different but proof not attached"
+      ]
+    },
+    "CONTACT_INFO": {
+      "title": "Contact Information",
+      "mandatory": true,
+      "instruction": "Enter your Mobile Number and Email ID for alerts.\nExample: '9876543210', 'rahul@email.com'",
+      "rejections": [
+        "Mobile number missing"
+      ]
+    },
+    "OCCUPATION_INCOME": {
+      "title": "Occupation & Income",
+      "mandatory": true,
+      "instruction": "Tick Occupation (e.g., Salaried, Self-Employed) and Gross Annual Income range.",
+      "rejections": [
+        "Occupation not selected",
+        "Income range not selected"
+      ]
+    },
+    "PEP_STATUS": {
+      "title": "Politically Exposed Person (PEP)",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' if you are a PEP (e.g., Senior Politician) or related to one. Tick 'No' otherwise.",
+      "rejections": [
+        "PEP status not selected"
+      ]
+    },
+    "JOINT_APPLICANT_SECTION": {
+      "title": "Joint Applicant Details",
+      "mandatory": false,
+      "instruction": "If opening a joint FD, fill the Second Applicant's Name, DOB, and ID details in this section.",
+      "rejections": []
+    },
+    "DEPOSIT_TYPE_SELECT": {
+      "title": "Deposit Type (Regular / Green)",
+      "mandatory": true,
+      "instruction": "Tick ONE box: 'Regular Deposit' OR 'Green Deposit'.\n(Note: Green Deposits are for eco-friendly financing).",
+      "rejections": [
+        "Deposit type not selected"
+      ]
+    },
+    "FD_DETAILS": {
+      "title": "Fixed Deposit Details",
+      "mandatory": true,
+      "instruction": "Enter Amount, Tenure, and Interest Payout Mode.\nExample: Amount '1,00,000', Tenure '1 Year 6 Months', Interest 'Quarterly Payout'",
+      "rejections": [
+        "Amount missing",
+        "Tenure missing"
+      ]
+    },
+    "FUNDING_MODE": {
+      "title": "Funding Mode",
+      "mandatory": true,
+      "instruction": "Tick how you are paying: 'Cheque' or 'NEFT/RTGS'. Enter Cheque No/Date.\nExample: Cheque No '001234'",
+      "rejections": [
+        "Funding mode not selected",
+        "Cheque details missing"
+      ]
+    },
+    "MATURITY_INSTRUCTION": {
+      "title": "Maturity Instruction",
+      "mandatory": true,
+      "instruction": "Tick what to do at maturity: 'Renew' (Principal+Interest) OR 'Payout' (Do not renew).\n(Green/Tax Saver FDs are 'Payout' only).",
+      "rejections": [
+        "Instruction missing",
+        "Renew selected for Tax Saver/Green FD"
+      ]
+    },
+    "NOMINATION_OPT": {
+      "title": "Nomination Selection",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' to add a nominee (Recommended). Tick 'No' to decline.",
+      "rejections": [
+        "Selection missing"
+      ]
+    },
+    "NOMINEE_DETAILS": {
+      "title": "Nominee Details",
+      "mandatory": false,
+      "instruction": "If Yes, enter Nominee Name, Relationship, and DOB.\nExample: 'RITA SINGH, SPOUSE, 12-05-1985'",
+      "rejections": [
+        "Nominee name missing when Yes selected"
+      ]
+    },
+    "NOMINEE_GUARDIAN": {
+      "title": "Nominee Guardian (If Minor)",
+      "mandatory": false,
+      "instruction": "If Nominee is <18 years, enter Guardian Name and Address.",
+      "rejections": [
+        "Nominee is minor but Guardian missing"
+      ]
+    },
+    "SIGNATURES": {
+      "title": "Signatures & Photos",
+      "mandatory": true,
+      "instruction": "Paste recent photos of all applicants. Sign ACROSS the photo and in the box below.",
+      "rejections": [
+        "Photos missing",
+        "Signatures missing"
+      ]
+    },
+    "BANK_USE": {
+      "title": "Bank Use Section",
+      "mandatory": false,
+      "instruction": "Branch codes, product codes, certifications, and KYC verification are to be completed by bank officials only.",
+      "rejections": [
+        "Customer filled bank-use-only fields"
+      ]
+    },
+    "DOCUMENTS_REQUIRED": {
+      "title": "Supporting Documents",
+      "mandatory": true,
+      "instruction": "PAN/Form 60, photo identity proof, address proof, income proof, and business proof (where applicable) must be submitted. Requirements may vary by scheme.",
+      "rejections": [
+        "Mandatory supporting documents not submitted",
+        "Income proof missing"
+      ]
+    }
+  }
+}

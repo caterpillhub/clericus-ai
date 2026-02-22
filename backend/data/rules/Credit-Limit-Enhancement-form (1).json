@@ -1,0 +1,142 @@
+{
+  "form_id": "IDFC_CREDIT_LIMIT_ENHANCEMENT",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter today's date in DD-MM-YYYY format.",
+      "rejections": [
+        "Date is missing",
+        "Date is in the future"
+      ]
+    },
+    "CUST_NAME": {
+      "title": "Customer Name",
+      "mandatory": true,
+      "instruction": "Write your full name as it appears on your credit card.",
+      "rejections": [
+        "Name is missing",
+        "Name mismatch with bank records"
+      ]
+    },
+    "CARD_NUMBER": {
+      "title": "Credit Card Number",
+      "mandatory": false,
+      "instruction": "Enter your 16-digit Credit Card number. (You must provide either this OR your registered mobile number below).",
+      "rejections": [
+        "Card number incomplete",
+        "Neither Card Number nor Mobile Number provided"
+      ]
+    },
+    "MOBILE_NUMBER": {
+      "title": "Registered Mobile Number",
+      "mandatory": false,
+      "instruction": "Enter your 10-digit mobile number linked to the bank. (Mandatory if Credit Card number is not provided above).",
+      "rejections": [
+        "Mobile number not 10 digits"
+      ]
+    },
+    "CUST_ID": {
+      "title": "Customer ID",
+      "mandatory": false,
+      "instruction": "Enter your Customer ID (found in your welcome letter or internet banking).",
+      "rejections": []
+    },
+    "DESIRED_LIMIT": {
+      "title": "Desired Credit Limit",
+      "mandatory": true,
+      "instruction": "Write the new total credit limit you want in words (e.g., 'Two Lakhs').",
+      "rejections": [
+        "Limit not specified"
+      ]
+    },
+    "OCCUPATION_TYPE": {
+      "title": "Occupation",
+      "mandatory": true,
+      "instruction": "Tick the box that describes your current job status (e.g., Salaried, Self Employed, Student).",
+      "rejections": [
+        "No occupation selected"
+      ]
+    },
+    "NET_INCOME": {
+      "title": "Net Monthly Income",
+      "mandatory": true,
+      "instruction": "Write your monthly 'take-home' income amount.",
+      "rejections": [
+        "Income amount missing"
+      ]
+    },
+    "COMPANY_NAME": {
+      "title": "Company Name",
+      "mandatory": false,
+      "instruction": "If you are Salaried or Self-Employed, write the name of your company or business here.",
+      "rejections": [
+        "Company name missing for Salaried/Self-Employed applicants"
+      ]
+    },
+    "SALARY_ACC_HOLDER": {
+      "title": "IDFC Salary Account Holder",
+      "mandatory": false,
+      "instruction": "Tick this box if your salary is credited directly to an IDFC FIRST Bank account. (If you check this, you do NOT need to attach income documents).",
+      "rejections": []
+    },
+    "DOC_SALARY_SLIP": {
+      "title": "Document: Salary Slips",
+      "mandatory": false,
+      "instruction": "Tick this if you are attaching your recent salary slips. (Required unless you have an IDFC Salary Account).",
+      "rejections": [
+        "Selected but document not attached"
+      ]
+    },
+    "DOC_IT_RETURN": {
+      "title": "Document: IT Return",
+      "mandatory": false,
+      "instruction": "Tick this if you are attaching your latest Income Tax Return (ITR) acknowledgment.",
+      "rejections": [
+        "Selected but document not attached"
+      ]
+    },
+    "DOC_BANK_STMT": {
+      "title": "Document: Bank Statement",
+      "mandatory": false,
+      "instruction": "Tick this if you are attaching your last 3 months' bank statement showing salary credits.",
+      "rejections": [
+        "Selected but document not attached"
+      ]
+    },
+    "DOC_OTHERS": {
+      "title": "Document: Others",
+      "mandatory": false,
+      "instruction": "Tick this if you are attaching other financial proofs.",
+      "rejections": []
+    },
+    "SIGNATURE": {
+      "title": "Customer Signature",
+      "mandatory": true,
+      "instruction": "Sign here to confirm you agree to the terms. This signature must match the one on your card.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "This section must be completed by bank officials only, including KYC verification, service request number, employee ID, branch details, and official signature.",
+      "rejections": [
+        "Customer-filled bank use only section"
+      ]
+    }
+  }
+}

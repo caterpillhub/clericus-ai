@@ -1,0 +1,239 @@
+{
+  "form_id": "IDFC_CARD_DISPUTE_UPDATE_V2",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "HEADER_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter today's date in DD-MM-YYYY format.",
+      "rejections": [
+        "Date is missing",
+        "Date is in the future"
+      ]
+    },
+    "DEBIT_CARD_NO": {
+      "title": "Debit Card Number",
+      "mandatory": true,
+      "instruction": "Enter the 16-digit number on the front of your debit card.",
+      "rejections": [
+        "Card number missing",
+        "Card number is not 16 digits"
+      ]
+    },
+    "ACCOUNT_NO": {
+      "title": "Bank Account Number",
+      "mandatory": true,
+      "instruction": "Enter your IDFC FIRST Bank account number.",
+      "rejections": [
+        "Account number missing",
+        "Account number mismatch with bank records"
+      ]
+    },
+    "TRANS_1_DETAILS": {
+      "title": "Disputed Transaction 1",
+      "mandatory": true,
+      "instruction": "Enter the details for the first transaction you are disputing: Date, Merchant Name, Total Amount, and the specific Amount you are disputing.",
+      "rejections": [
+        "Transaction date missing",
+        "Merchant name missing",
+        "Amount missing"
+      ]
+    },
+    "TRANS_2_DETAILS": {
+      "title": "Disputed Transaction 2",
+      "mandatory": false,
+      "instruction": "If you are disputing a second transaction, enter the details here. Otherwise, leave blank.",
+      "rejections": [
+        "Partial details entered (e.g., date entered but amount missing)"
+      ]
+    },
+    "TRANS_3_DETAILS": {
+      "title": "Disputed Transaction 3",
+      "mandatory": false,
+      "instruction": "If you are disputing a third transaction, enter the details here.",
+      "rejections": [
+        "Partial details entered"
+      ]
+    },
+    "REASON_DUPLICATE": {
+      "title": "Reason: Duplicate Billing",
+      "mandatory": false,
+      "instruction": "Tick this box if you were charged more than once for the same single purchase.",
+      "rejections": [
+        "Selected together with conflicting reasons"
+      ]
+    },
+    "REASON_DEFECTIVE": {
+      "title": "Reason: Goods Defective/Not as Described",
+      "mandatory": false,
+      "instruction": "Tick this box if the item you received was damaged, defective, or different from what you ordered. You must attach proof of return.",
+      "rejections": [
+        "Selected but proof of return not attached"
+      ]
+    },
+    "REASON_FAILED_ONLINE": {
+      "title": "Reason: Failed Online Transaction",
+      "mandatory": false,
+      "instruction": "Tick this box if an online payment failed (screen froze, error message) but money was still deducted.",
+      "rejections": []
+    },
+    "REASON_ATM_NO_CASH": {
+      "title": "Reason: ATM Cash Not Dispensed",
+      "mandatory": false,
+      "instruction": "Tick this box if the ATM did not give you ANY cash, but money was deducted from your account.",
+      "rejections": [
+        "Selected together with 'Partial Cash' option"
+      ]
+    },
+    "REASON_ATM_PARTIAL": {
+      "title": "Reason: ATM Partial Cash Dispensed",
+      "mandatory": false,
+      "instruction": "Tick this box if the ATM gave you SOME cash, but less than what you asked for. You must fill in the two amounts below.",
+      "rejections": [
+        "Selected but amounts not specified below"
+      ]
+    },
+    "ATM_PARTIAL_DETAILS": {
+      "title": "ATM Partial Cash Details",
+      "mandatory": false,
+      "instruction": "If you selected 'Partial Cash' above, write: 1) The amount actually received, and 2) The amount deducted from your account.",
+      "rejections": [
+        "Amounts missing while 'Partial Cash' is selected"
+      ]
+    },
+    "REASON_CANCELLED_NO_REFUND": {
+      "title": "Reason: Cancelled but No Refund",
+      "mandatory": false,
+      "instruction": "Tick this box if you cancelled a purchase, but have not received your money back. You must attach the credit slip or refund note.",
+      "rejections": [
+        "Selected but cancellation proof not attached"
+      ]
+    },
+    "REASON_PAID_BY_OTHER": {
+      "title": "Reason: Paid by Other Means",
+      "mandatory": false,
+      "instruction": "Tick this box if you paid by cash or another card, but this card was still charged. Attach the cash receipt or other card's statement.",
+      "rejections": [
+        "Selected but proof of other payment not attached"
+      ]
+    },
+    "REASON_SUB_CANCELLED": {
+      "title": "Reason: Subscription Cancelled",
+      "mandatory": false,
+      "instruction": "Tick this box if you were charged for a subscription (like Netflix, Gym, Club) that you had already cancelled.",
+      "rejections": [
+        "Selected but cancellation letter not attached"
+      ]
+    },
+    "REASON_GOODS_NOT_REC": {
+      "title": "Reason: Goods Not Received",
+      "mandatory": false,
+      "instruction": "Tick this box if you ordered something but it never arrived. You must enter the expected delivery date below.",
+      "rejections": [
+        "Selected but expected date missing"
+      ]
+    },
+    "GOODS_EXP_DATE": {
+      "title": "Expected Delivery Date",
+      "mandatory": false,
+      "instruction": "If you selected 'Goods Not Received', write the date the merchant promised to deliver the items.",
+      "rejections": [
+        "Date missing while 'Goods Not Received' is selected"
+      ]
+    },
+    "REASON_WRONG_AMT": {
+      "title": "Reason: Incorrect Amount Charged",
+      "mandatory": false,
+      "instruction": "Tick this box if the transaction amount is different from your bill amount. Fill in the correct vs. billed amounts below.",
+      "rejections": [
+        "Selected but amounts not specified"
+      ]
+    },
+    "WRONG_AMT_DETAILS": {
+      "title": "Incorrect Amount Details",
+      "mandatory": false,
+      "instruction": "Write the Correct Amount (what it should have been) and the Billed Amount (what was actually charged).",
+      "rejections": [
+        "Amounts missing while 'Incorrect Amount' is selected"
+      ]
+    },
+    "REASON_UNAUTH": {
+      "title": "Reason: Unauthorized Transaction",
+      "mandatory": false,
+      "instruction": "Tick this box if you did not make this transaction at all and your card was with you the whole time.",
+      "rejections": []
+    },
+    "REASON_HOTEL_CANCEL": {
+      "title": "Reason: Hotel Reservation Cancelled",
+      "mandatory": false,
+      "instruction": "Tick this box if you were charged for a hotel booking you cancelled. You must enter the Cancellation Date and Code below.",
+      "rejections": [
+        "Selected but cancellation details missing"
+      ]
+    },
+    "HOTEL_CANCEL_DETAILS": {
+      "title": "Hotel Cancellation Details",
+      "mandatory": false,
+      "instruction": "Write the Date you cancelled the hotel and the Cancellation Code they gave you.",
+      "rejections": [
+        "Details missing while 'Hotel Cancelled' is selected"
+      ]
+    },
+    "REASON_OTHER": {
+      "title": "Reason: Other",
+      "mandatory": false,
+      "instruction": "Tick this box if your issue is not listed above. Write the details in the space provided.",
+      "rejections": [
+        "Selected but explanation text missing"
+      ]
+    },
+    "ANNEX_CORRESPONDENCE": {
+      "title": "Attachment: Correspondence",
+      "mandatory": false,
+      "instruction": "Tick this if you are attaching emails or letters exchanged with the merchant.",
+      "rejections": []
+    },
+    "ANNEX_SLIPS": {
+      "title": "Attachment: Charge Slips",
+      "mandatory": false,
+      "instruction": "Tick this if you are attaching the transaction slips/receipts.",
+      "rejections": []
+    },
+    "DECLARATION_SIGN": {
+      "title": "Customer Signature",
+      "mandatory": true,
+      "instruction": "Sign here to confirm all information is true. By signing, you agree that if the claim is false, the bank may take legal action.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch with bank records"
+      ]
+    },
+    "CONTACT_INFO": {
+      "title": "Contact Details",
+      "mandatory": true,
+      "instruction": "Enter your telephone number (with STD code) and the Place (City) where you are signing this form.",
+      "rejections": [
+        "Phone number missing",
+        "Place missing"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "This section is to be completed by bank officials only, including service request number, employee ID, branch details, and official signature.",
+      "rejections": [
+        "Customer-filled bank-use-only section"
+      ]
+    }
+  }
+}

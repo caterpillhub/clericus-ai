@@ -1,0 +1,268 @@
+{
+  "form_id": "IDFC_TWO_WHEELER_LOAN_APP",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter the date of application in DD-MM-YYYY format.\nExample: '25-12-2023'",
+      "rejections": [
+        "Date missing",
+        "Future date entered"
+      ]
+    },
+    "EMAIL_ID": {
+      "title": "E-Mail ID",
+      "mandatory": true,
+      "instruction": "Enter your valid email address.\nExample: 'rahul.singh@email.com'",
+      "rejections": [
+        "Email missing",
+        "Invalid email format"
+      ]
+    },
+    "APPLICANT_TYPE": {
+      "title": "Applicant Type",
+      "mandatory": true,
+      "instruction": "Tick ONE box to indicate your role.\nOptions: 'Applicant' (Main Borrower), 'Co-Applicant' (Joint Borrower), or 'Guarantor'.",
+      "rejections": [
+        "Type not selected",
+        "Multiple types selected"
+      ]
+    },
+    "APPLICANT_NAME": {
+      "title": "Applicant Name",
+      "mandatory": true,
+      "instruction": "Enter your full name exactly as it appears on your ID proof.\nExample: 'VIKRAM SINGH RATHORE'",
+      "rejections": [
+        "Name missing",
+        "Name mismatch with ID proof"
+      ]
+    },
+    "GENDER": {
+      "title": "Gender",
+      "mandatory": true,
+      "instruction": "Tick your gender: 'Male', 'Female', or 'Third Gender'.",
+      "rejections": [
+        "Gender not selected"
+      ]
+    },
+    "DOB": {
+      "title": "Date of Birth",
+      "mandatory": true,
+      "instruction": "Enter your Date of Birth in DD-MM-YYYY format.\nExample: '15-08-1990'",
+      "rejections": [
+        "DOB missing",
+        "Applicant is a minor (<18 years)"
+      ]
+    },
+    "MOBILE_PHONE": {
+      "title": "Mobile Phone",
+      "mandatory": true,
+      "instruction": "Enter your 10-digit mobile number.\nExample: '9876543210'",
+      "rejections": [
+        "Mobile number missing",
+        "Number is not 10 digits"
+      ]
+    },
+    "MOTHER_NAME": {
+      "title": "Mother's Name",
+      "mandatory": true,
+      "instruction": "Enter your mother's full legal name.\nExample: 'SAVITA DEVI'",
+      "rejections": [
+        "Mother's name missing"
+      ]
+    },
+    "MARITAL_STATUS": {
+      "title": "Marital Status",
+      "mandatory": true,
+      "instruction": "Tick your current status: 'Single', 'Married', or 'Other'.",
+      "rejections": [
+        "Status not selected"
+      ]
+    },
+    "FATHER_NAME": {
+      "title": "Father's Name",
+      "mandatory": true,
+      "instruction": "Enter your father's full name.\nExample: 'RAJENDER SINGH'",
+      "rejections": [
+        "Father's name missing"
+      ]
+    },
+    "SPOUSE_NAME": {
+      "title": "Spouse's Name",
+      "mandatory": false,
+      "instruction": "If married, enter your spouse's name here.\nExample: 'PRIYA SINGH'",
+      "rejections": [
+        "Married status selected but Spouse name missing"
+      ]
+    },
+    "ID_PROOF_PAN": {
+      "title": "PAN Card Number",
+      "mandatory": true,
+      "instruction": "Enter your 10-character Permanent Account Number.\nExample: 'ABCDE1234F'",
+      "rejections": [
+        "PAN missing"
+      ]
+    },
+    "ID_PROOF_AADHAAR": {
+      "title": "Aadhaar Card Number",
+      "mandatory": false,
+      "instruction": "Enter your 12-digit Aadhaar Number.\nExample: '1234 5678 9012'",
+      "rejections": []
+    },
+    "ANNUAL_INCOME": {
+      "title": "Annual Gross Salary / Income",
+      "mandatory": true,
+      "instruction": "Enter your total yearly income in Rupees.\nExample: '4,50,000'",
+      "rejections": [
+        "Income missing"
+      ]
+    },
+    "RESIDENTIAL_STATUS": {
+      "title": "Residential Status",
+      "mandatory": true,
+      "instruction": "Tick your status: 'Resident Individual', 'Non Resident Indian', or 'Foreign National'.",
+      "rejections": [
+        "Status not selected"
+      ]
+    },
+    "PROPERTY_STATUS": {
+      "title": "Property Status",
+      "mandatory": true,
+      "instruction": "Tick the status of your current residence: 'Own', 'Rented', 'Company Provided', or 'Relative'.",
+      "rejections": [
+        "Status not selected"
+      ]
+    },
+    "CURRENT_ADDRESS": {
+      "title": "Current Residence Address",
+      "mandatory": true,
+      "instruction": "Enter your full current address including Flat No, Building, Street, City, and Pin Code.\nExample: 'Flat 402, Lotus Apt, MG Road, Pune - 411001'",
+      "rejections": [
+        "Address incomplete",
+        "Pin code missing"
+      ]
+    },
+    "PERMANENT_ADDRESS": {
+      "title": "Permanent Residence Address",
+      "mandatory": true,
+      "instruction": "Enter your permanent address. If same as current, write 'SAME AS ABOVE'.",
+      "rejections": [
+        "Address missing"
+      ]
+    },
+    "OFFICE_ADDRESS": {
+      "title": "Office / Business Address",
+      "mandatory": true,
+      "instruction": "Enter your full work address including Pin Code and Landline Number.\nExample: 'Office 5, Tech Park, Whitefield, Bangalore - 560066'",
+      "rejections": [
+        "Office address missing"
+      ]
+    },
+    "JOB_TENURE_CURRENT": {
+      "title": "Years at Present Job/Business",
+      "mandatory": true,
+      "instruction": "Enter the number of years you have worked at your current company.\nExample: '3 Years'",
+      "rejections": [
+        "Tenure missing"
+      ]
+    },
+    "JOB_TENURE_PREVIOUS": {
+      "title": "Years at Previous Job",
+      "mandatory": false,
+      "instruction": "Enter the number of years worked at your previous job (if applicable).\nExample: '2 Years'",
+      "rejections": []
+    },
+    "RELATION_DIRECTOR": {
+      "title": "Relation to Director/Senior Officer",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' if you are related to any Director or Senior Officer of IDFC Bank. Otherwise, tick 'No'.",
+      "rejections": [
+        "Selection missing"
+      ]
+    },
+    "PEP_STATUS": {
+      "title": "Politically Exposed Person (PEP)",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' if you are a PEP (e.g., Politician, Govt Official). Tick 'No' otherwise.",
+      "rejections": [
+        "Selection missing"
+      ]
+    },
+    "BANK_NAME": {
+      "title": "Bank Name (Existing Account)",
+      "mandatory": true,
+      "instruction": "Enter the name of your primary bank.\nExample: 'HDFC BANK'",
+      "rejections": [
+        "Bank name missing"
+      ]
+    },
+    "BANK_ACC_NO": {
+      "title": "Bank Account Number",
+      "mandatory": true,
+      "instruction": "Enter your main bank account number.\nExample: '001122334455'",
+      "rejections": [
+        "Account number missing"
+      ]
+    },
+    "REFERENCE_1": {
+      "title": "Reference 1 Details",
+      "mandatory": true,
+      "instruction": "Provide details of a person not living with you: Name, Address, Relation, Mobile.\nExample: 'AMIT KUMAR, COLLEAGUE, 9876500000'",
+      "rejections": [
+        "Reference details incomplete"
+      ]
+    },
+    "VEHICLE_MODEL": {
+      "title": "Vehicle Model",
+      "mandatory": true,
+      "instruction": "Enter the specific Two-Wheeler model you wish to purchase.\nExample: 'HONDA ACTIVA 6G'",
+      "rejections": [
+        "Vehicle model missing"
+      ]
+    },
+    "LOAN_AMOUNT_REQ": {
+      "title": "Loan Amount Required",
+      "mandatory": true,
+      "instruction": "Enter the loan amount you are applying for in Rupees.\nExample: '80,000'",
+      "rejections": [
+        "Loan amount missing"
+      ]
+    },
+    "LOAN_TENURE_REQ": {
+      "title": "Tenure (Months)",
+      "mandatory": true,
+      "instruction": "Enter the number of months you want for repayment.\nExample: '24'",
+      "rejections": [
+        "Tenure missing"
+      ]
+    },
+    "SIGNATURE_APPLICANT": {
+      "title": "Applicant Signature",
+      "mandatory": true,
+      "instruction": "Sign here to confirm all details are true.",
+      "rejections": [
+        "Signature missing"
+      ]
+    },
+    "DOCUMENTS_REQUIRED": {
+      "title": "Supporting Documents",
+      "mandatory": true,
+      "instruction": "PAN/Form 60, photo identity proof, address proof, income proof, and business proof (where applicable) must be submitted. Requirements may vary by scheme.",
+      "rejections": [
+        "Mandatory supporting documents not submitted",
+        "Income proof missing"
+      ]
+    }
+  }
+}

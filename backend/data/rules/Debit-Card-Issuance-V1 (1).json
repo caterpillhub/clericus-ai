@@ -1,0 +1,146 @@
+{
+  "form_id": "IDFC_DEBIT_CARD_ISSUANCE_V1",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter today's date in DD-MM-YYYY format.",
+      "rejections": [
+        "Date is missing",
+        "Date is in the future"
+      ]
+    },
+    "CUST_TYPE": {
+      "title": "Customer Type",
+      "mandatory": true,
+      "instruction": "Tick 'Resident' if you live in India. Tick 'Non-Resident' if you live abroad.",
+      "rejections": [
+        "Customer type not selected",
+        "Both Resident and Non-Resident selected"
+      ]
+    },
+    "CUST_ID": {
+      "title": "Customer ID",
+      "mandatory": false,
+      "instruction": "Enter your Customer ID (found in your chequebook or mobile banking app).",
+      "rejections": []
+    },
+    "PRIMARY_ACC_NO": {
+      "title": "Primary Account Number",
+      "mandatory": true,
+      "instruction": "Enter your main bank account number. This is a mandatory field.",
+      "rejections": [
+        "Account number missing",
+        "Account number does not match bank records"
+      ]
+    },
+    "CUST_NAME": {
+      "title": "Customer Name",
+      "mandatory": true,
+      "instruction": "Write your full legal name.",
+      "rejections": [
+        "Name missing"
+      ]
+    },
+    "NAME_ON_CARD": {
+      "title": "Name to Print on Card",
+      "mandatory": true,
+      "instruction": "Write the name exactly as you want it to appear on your debit card. Use letters only—no special characters (like @, &, #) are allowed.",
+      "rejections": [
+        "Name missing",
+        "Contains special characters or numbers"
+      ]
+    },
+    "REASON_FOR_REQUEST": {
+      "title": "Reason for Request",
+      "mandatory": true,
+      "instruction": "Tick one box: 'New Issuance' for a fresh card, 'Lost/Stolen' if you lost your old one, or 'Damaged' if it is broken.",
+      "rejections": [
+        "No reason selected",
+        "Multiple conflicting reasons selected"
+      ]
+    },
+    "ENTITY_NAME": {
+      "title": "Entity Name (Business Only)",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if the account belongs to a company or business. Write the business name to be printed on the card. Do not use special characters.",
+      "rejections": [
+        "Contains special characters"
+      ]
+    },
+    "CARD_CATEGORY": {
+      "title": "Card Category (Domestic/International)",
+      "mandatory": true,
+      "instruction": "Tick 'Domestic' for use within India only. Tick 'International' for global use. Note: NRO Account holders cannot choose International.",
+      "rejections": [
+        "Category not selected",
+        "International selected for NRO account"
+      ]
+    },
+    "LINK_ACC_1": {
+      "title": "Link Additional Account 1",
+      "mandatory": false,
+      "instruction": "If you want to access another IDFC account with this same card, write that account number here.",
+      "rejections": [
+        "Invalid account number"
+      ]
+    },
+    "LINK_ACC_2": {
+      "title": "Link Additional Account 2",
+      "mandatory": false,
+      "instruction": "Write a second additional account number to link, if applicable.",
+      "rejections": []
+    },
+    "DE_LINK_ACC_1": {
+      "title": "De-Link Account 1",
+      "mandatory": false,
+      "instruction": "If you want to REMOVE an account so this card can no longer access it, write that account number here.",
+      "rejections": [
+        "Account number not currently linked"
+      ]
+    },
+    "CHANGE_PRIMARY_ACC": {
+      "title": "Change Primary Account",
+      "mandatory": false,
+      "instruction": "If you want to switch your main account for this card, write the new Primary Account Number here.",
+      "rejections": []
+    },
+    "EXISTING_CARD_NO": {
+      "title": "Existing Debit Card Number",
+      "mandatory": false,
+      "instruction": "If you already have a card and are updating details or replacing it, write the old card number here.",
+      "rejections": [
+        "Card number incomplete"
+      ]
+    },
+    "SIGNATURE": {
+      "title": "Customer Signature",
+      "mandatory": true,
+      "instruction": "Sign here. The signature must match your bank records. Note: Joint accounts where 'both must sign' cannot get a debit card.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch",
+        "Account has 'Jointly' operation mode (Debit cards not issued)"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "This section must be completed by bank officials only, including service request number, employee ID, branch details, and official signature.",
+      "rejections": [
+        "Customer-filled bank use only section"
+      ]
+    }
+  }
+}

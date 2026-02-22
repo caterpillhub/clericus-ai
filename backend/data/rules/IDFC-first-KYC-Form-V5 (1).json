@@ -1,0 +1,136 @@
+{
+  "form_id": "IDFC_KYC_UPDATION_V5",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL_INSTRUCTIONS": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "Fill the form in BLACK INK and CAPITAL LETTERS only.",
+      "rejections": [
+        "Form filled in blue/other ink",
+        "Form not filled in capital letters"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter today's date in DD-MM-YYYY format.",
+      "rejections": [
+        "Date is missing",
+        "Date is in the future"
+      ]
+    },
+    "CUST_DETAILS": {
+      "title": "Customer Details",
+      "mandatory": true,
+      "instruction": "Enter your Customer ID and full Name as per bank records.",
+      "rejections": [
+        "Customer ID missing",
+        "Name missing"
+      ]
+    },
+    "IDENTITY_DOCS": {
+      "title": "Identity Documents",
+      "mandatory": true,
+      "instruction": "Enter your Aadhaar Number and PAN. \nNote: If you only submit PAN, you must also provide an additional address proof.",
+      "rejections": [
+        "PAN missing",
+        "Aadhaar missing",
+        "Only PAN provided without address proof"
+      ]
+    },
+    "PHOTO_SIGN": {
+      "title": "Photograph & Signature",
+      "mandatory": true,
+      "instruction": "Paste a recent colour photograph in the box and sign across it.",
+      "rejections": [
+        "Photograph missing",
+        "Signature across photograph missing"
+      ]
+    },
+    "CHANGE_PERM_ADDRESS": {
+      "title": "Change Permanent Address",
+      "mandatory": false,
+      "instruction": "Tick this box ONLY if you want to change your permanent address. You must attach an Officially Valid Document (OVD) like Passport or Voter ID as proof.",
+      "rejections": [
+        "Selected but no OVD proof attached",
+        "Selected but new address details missing"
+      ]
+    },
+    "PERM_ADDRESS_DETAILS": {
+      "title": "New Permanent Address",
+      "mandatory": false,
+      "instruction": "If changing address, write the new Line 1, Line 2, City, State, and Pin Code.",
+      "rejections": [
+        "Address incomplete (Pin code or City missing)"
+      ]
+    },
+    "CHANGE_MAIL_ADDRESS": {
+      "title": "Change Mailing Address",
+      "mandatory": false,
+      "instruction": "Tick this box to change where your bank letters are sent. You can select 'Same as Above' if it matches your permanent address.",
+      "rejections": [
+        "Selected but address details missing"
+      ]
+    },
+    "MAIL_ADDRESS_TYPE": {
+      "title": "Mailing Address Type",
+      "mandatory": false,
+      "instruction": "Select if this address is your 'Residence' or 'Place of Work'.",
+      "rejections": [
+        "Mailing address changed but type not selected"
+      ]
+    },
+    "NO_CHANGE_DECLARATION": {
+      "title": "No Change Declaration",
+      "mandatory": false,
+      "instruction": "Tick this box if your details have NOT changed and you are just updating your KYC status.",
+      "rejections": [
+        "Ticked while other change sections are filled"
+      ]
+    },
+    "OCCUPATION_DETAILS": {
+      "title": "Occupation & Income",
+      "mandatory": true,
+      "instruction": "Tick your Occupation (e.g., Salaried, Self-Employed), Source of Income, and Gross Annual Income.",
+      "rejections": [
+        "Occupation not selected",
+        "Income source not selected"
+      ]
+    },
+    "FATCA_DETAILS": {
+      "title": "FATCA / Tax Residency",
+      "mandatory": true,
+      "instruction": "Enter your Place and Country of Birth. \nIf you pay tax in any country other than India, you MUST fill the Country of Tax Residence and TIN.",
+      "rejections": [
+        "Place/Country of Birth missing",
+        "Tax resident of foreign country declared but TIN missing"
+      ]
+    },
+    "FINAL_DECLARATION": {
+      "title": "Customer Signature",
+      "mandatory": true,
+      "instruction": "Sign at the bottom to certify that all information is true.",
+      "rejections": [
+        "Signature missing"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "To be completed by bank staff for service request number, branch details, and verification.",
+      "rejections": [
+        "Customer-filled bank use only section"
+      ]
+    },
+    "DOCUMENTS_REQUIRED": {
+      "title": "Supporting Documents",
+      "mandatory": true,
+      "instruction": "PAN/Form 60, photo identity proof, address proof, income proof, and business proof (where applicable) must be submitted. Requirements may vary by scheme.",
+      "rejections": [
+        "Mandatory supporting documents not submitted",
+        "Income proof missing"
+      ]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "form_id": "IDFC_JOINT_SAVINGS_ACCOUNT_OPENING_V3",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL_INSTRUCTIONS": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "Fill the entire form using BLACK INK and CAPITAL LETTERS only. Do not overwrite or use correction fluid.",
+      "rejections": [
+        "Form filled in blue/other ink",
+        "Form not filled in capital letters",
+        "Illegible handwriting"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Application Date",
+      "mandatory": true,
+      "instruction": "Enter the date you are submitting this form (DD-MM-YYYY).",
+      "rejections": [
+        "Date missing",
+        "Future date entered"
+      ]
+    },
+    "APPLICANT_1_PERSONAL": {
+      "title": "Applicant 1: Personal Details",
+      "mandatory": true,
+      "instruction": "Enter the full name, Date of Birth, Gender, and Marital Status of the Primary Applicant. (If you have a CKYC number, enter it to skip other details).",
+      "rejections": [
+        "Name missing",
+        "Date of Birth missing",
+        "Gender not selected"
+      ]
+    },
+    "APPLICANT_1_PARENTS": {
+      "title": "Applicant 1: Family Details",
+      "mandatory": true,
+      "instruction": "You MUST provide at least one name: Father's Name, Spouse's Name, or Mother's Name.",
+      "rejections": [
+        "All parent/spouse name fields left blank"
+      ]
+    },
+    "APPLICANT_1_DOCS": {
+      "title": "Applicant 1: Identity Documents",
+      "mandatory": true,
+      "instruction": "Provide your PAN Number (Mandatory). If you do not have a PAN, you must attach Form 60. Also enter the last 4 digits of your Aadhaar.",
+      "rejections": [
+        "PAN missing and Form 60 not attached",
+        "Aadhaar last 4 digits missing"
+      ]
+    },
+    "APPLICANT_1_ADDRESS": {
+      "title": "Applicant 1: Permanent Address",
+      "mandatory": true,
+      "instruction": "Enter your address exactly as it appears on your OVD (Officially Valid Document like Passport/Voter ID). Tick the box for the document you are using as proof.",
+      "rejections": [
+        "Address does not match attached proof",
+        "Pin code missing"
+      ]
+    },
+    "APPLICANT_1_CONTACT": {
+      "title": "Applicant 1: Contact Details",
+      "mandatory": true,
+      "instruction": "Enter a valid Mobile Number and Email ID. All bank alerts and OTPs will be sent here.",
+      "rejections": [
+        "Mobile number missing",
+        "Email ID missing"
+      ]
+    },
+    "APPLICANT_1_OCCUPATION": {
+      "title": "Applicant 1: Occupation & Income",
+      "mandatory": true,
+      "instruction": "Tick your occupation (Salaried/Self-Employed/Student etc.), Source of Income, and Gross Annual Income range.",
+      "rejections": [
+        "Occupation not selected",
+        "Income range not selected"
+      ]
+    },
+    "APPLICANT_2_STATUS": {
+      "title": "Applicant 2: Existing Customer Status",
+      "mandatory": false,
+      "instruction": "If the second applicant is ALREADY an IDFC Bank customer, enter their Customer ID here and skip the personal details section. If new, leave blank and fill details below.",
+      "rejections": []
+    },
+    "APPLICANT_2_PERSONAL": {
+      "title": "Applicant 2: Personal Details",
+      "mandatory": false,
+      "instruction": "Fill this ONLY for a Joint Account. Enter the Second Applicant's Name, DOB, Gender, and Relationship to the Primary Applicant.",
+      "rejections": [
+        "Joint account selected but Applicant 2 details missing"
+      ]
+    },
+    "PRODUCT_SELECTION": {
+      "title": "Account Product Selection",
+      "mandatory": true,
+      "instruction": "Tick the type of account you want to open (e.g., 'Savings', 'Senior', 'Minor', 'Salary').",
+      "rejections": [
+        "Product not selected"
+      ]
+    },
+    "MODE_OF_OPERATION": {
+      "title": "Mode of Operation",
+      "mandatory": true,
+      "instruction": "Choose how the account will be used: \n1. 'Singly' (Only you).\n2. 'Either or Survivor' (Any joint holder can operate).\n3. 'Jointly' (Signatures of ALL holders required for every transaction).",
+      "rejections": [
+        "Mode not selected"
+      ]
+    },
+    "MINOR_ACCOUNT_DETAILS": {
+      "title": "Minor Account / Guardian Details",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if the account is for a Minor (under 18). Enter the Guardian's Customer ID, Relationship, and funding instructions.",
+      "rejections": [
+        "Product is 'Minor' but Guardian details missing",
+        "Guardian declaration not signed"
+      ]
+    },
+    "DEBIT_CARD_REQ": {
+      "title": "Debit Card Request",
+      "mandatory": false,
+      "instruction": "Tick 'Yes' if you want a Debit Card. Write the name you want printed on the card. \nNote: Accounts operated 'Jointly' cannot get Debit Cards.",
+      "rejections": [
+        "Card requested for 'Jointly' operated account"
+      ]
+    },
+    "SWEEP_OUT_FACILITY": {
+      "title": "Sweep Out Facility",
+      "mandatory": false,
+      "instruction": "Tick this box if you want excess balance in your savings account to automatically transfer to a Fixed Deposit (to earn higher interest).",
+      "rejections": []
+    },
+    "NOMINATION_DETAILS": {
+      "title": "Nomination",
+      "mandatory": true,
+      "instruction": "Select 'Yes' to add a nominee (recommended) and fill their Name, Relation, and DOB. Select 'No' if you do not want a nominee.",
+      "rejections": [
+        "Neither Yes nor No selected",
+        "Yes selected but Nominee Name missing"
+      ]
+    },
+    "DECLARATION_SIGNATURES": {
+      "title": "Declaration & Signatures",
+      "mandatory": true,
+      "instruction": "Paste recent colour photographs of all applicants. Sign across the photographs and in the signature boxes below.",
+      "rejections": [
+        "Photographs missing",
+        "Signature across photograph missing",
+        "Signature in box missing"
+      ]
+    },
+    "BANK_USE_PAYMENT": {
+      "title": "Initial Payment Details",
+      "mandatory": true,
+      "instruction": "Bank Official Use: Enter details of the initial deposit (Cash/Cheque/NEFT amount and reference number).",
+      "rejections": [
+        "Initial payment details missing"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "To be completed by bank staff for KYC verification, product coding, and approvals.",
+      "rejections": [
+        "Customer-filled bank use section"
+      ]
+    },
+    "DOCUMENTS_REQUIRED": {
+      "title": "Supporting Documents",
+      "mandatory": true,
+      "instruction": "PAN/Form 60, photo identity proof, address proof, income proof, and business proof (where applicable) must be submitted. Requirements may vary by scheme.",
+      "rejections": [
+        "Mandatory supporting documents not submitted",
+        "Income proof missing"
+      ]
+    }
+  }
+}

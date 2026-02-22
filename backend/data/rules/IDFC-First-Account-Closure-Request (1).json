@@ -1,0 +1,133 @@
+{
+  "form_id": "IDFC_ACCOUNT_CLOSURE_REQUEST",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter today's date in DD-MM-YYYY format.",
+      "rejections": [
+        "Date is missing",
+        "Date is in the future"
+      ]
+    },
+    "CUST_ID": {
+      "title": "Customer ID",
+      "mandatory": true,
+      "instruction": "Enter your unique Customer ID (found in your chequebook or welcome letter).",
+      "rejections": [
+        "Customer ID missing"
+      ]
+    },
+    "ACC_NUMBER_TO_CLOSE": {
+      "title": "Account Number to Close",
+      "mandatory": true,
+      "instruction": "Write the exact account number you wish to permanently close.",
+      "rejections": [
+        "Account number missing",
+        "Account number mismatch with bank records"
+      ]
+    },
+    "CUST_NAME": {
+      "title": "Customer Name",
+      "mandatory": true,
+      "instruction": "Write your full legal name as it appears in bank records.",
+      "rejections": [
+        "Name missing"
+      ]
+    },
+    "PURPOSE_CLOSURE": {
+      "title": "Purpose of Closure",
+      "mandatory": true,
+      "instruction": "Briefly explain why you are closing this account (e.g., 'Consolidating accounts', 'Moving abroad').",
+      "rejections": [
+        "Reason for closure missing"
+      ]
+    },
+    "PAYOUT_MODE_SELECT": {
+      "title": "Payout Mode Selection",
+      "mandatory": true,
+      "instruction": "Tick ONE box to choose how you want to receive the remaining balance: 'Electronic Transfer', 'Demand Draft', 'Internal Transfer', or 'Cash'.",
+      "rejections": [
+        "No payout mode selected",
+        "Multiple payout modes selected"
+      ]
+    },
+    "PAYOUT_NEFT_DETAILS": {
+      "title": "Option 1: Transfer to Another Bank",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if you chose 'Electronic Transfer'. Enter the details of YOUR account at another bank (Account No, Bank Name, IFSC). Note: You cannot transfer to a third party.",
+      "rejections": [
+        "Selected but account details missing",
+        "Third-party account details provided (Name mismatch)"
+      ]
+    },
+    "PAYOUT_DD_DETAILS": {
+      "title": "Option 2: Demand Draft",
+      "mandatory": false,
+      "instruction": "Tick this if you want a Demand Draft sent to your registered address. Note: It cannot be made out to a third party.",
+      "rejections": [
+        "Selected but address not updated in records"
+      ]
+    },
+    "PAYOUT_INTERNAL_DETAILS": {
+      "title": "Option 3: Transfer to IDFC Bank Account",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if you have another existing IDFC FIRST Bank account. Enter that account number here.",
+      "rejections": [
+        "Selected but IDFC account number missing"
+      ]
+    },
+    "PAYOUT_CASH_DETAILS": {
+      "title": "Option 4: Cash Payout",
+      "mandatory": false,
+      "instruction": "Tick this ONLY if the balance is below ₹20,000. If the balance is higher, you must choose another option.",
+      "rejections": [
+        "Selected for balance exceeding ₹20,000"
+      ]
+    },
+    "DECLARATION_SIGNATURE_1": {
+      "title": "First Account Holder Signature",
+      "mandatory": true,
+      "instruction": "Primary account holder must sign here. By signing, you confirm you have destroyed all unused cheques and cards linked to this account.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch"
+      ]
+    },
+    "DECLARATION_SIGNATURE_2": {
+      "title": "Second Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If this is a joint account, the second holder must sign here.",
+      "rejections": [
+        "Signature missing for joint account"
+      ]
+    },
+    "DECLARATION_SIGNATURE_3": {
+      "title": "Third Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If this is a joint account, the third holder must sign here.",
+      "rejections": [
+        "Signature missing for joint account"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "This section must be completed by bank officials only, including service request number, employee details, branch information, and official signature.",
+      "rejections": [
+        "Customer-filled bank use only section"
+      ]
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "form_id": "IDFC_FD_RD_LIQUIDATION_V5",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Write today's date in DD-MM-YYYY format. Do not use a future date.",
+      "rejections": [
+        "Date is in the future",
+        "Date format is incorrect",
+        "Date is missing"
+      ]
+    },
+    "CUST_NAME_1": {
+      "title": "Primary Applicant Name",
+      "mandatory": true,
+      "instruction": "Write the full name of the first account holder exactly as it appears in your bank passbook.",
+      "rejections": [
+        "Name does not match bank records",
+        "Field is empty"
+      ]
+    },
+    "CUST_NAME_2": {
+      "title": "Second Applicant Name",
+      "mandatory": false,
+      "instruction": "If this is a joint account, write the name of the second holder here. Leave blank if you are the only holder.",
+      "rejections": [
+        "Name missing for joint account",
+        "Name does not match bank records"
+      ]
+    },
+    "CUST_NAME_3": {
+      "title": "Third Applicant Name",
+      "mandatory": false,
+      "instruction": "If there is a third joint holder, write their name here. Otherwise, leave blank.",
+      "rejections": [
+        "Name missing for joint account"
+      ]
+    },
+    "FD_ACC_NO": {
+      "title": "Fixed Deposit Account Number",
+      "mandatory": false,
+      "instruction": "Fill this only if closing an FD. Write the specific FD account number you want to close (found on your FD receipt).",
+      "rejections": [
+        "Account number digits are missing",
+        "Invalid account number length"
+      ]
+    },
+    "PRINCIPAL_AMT": {
+      "title": "Principal Amount",
+      "mandatory": false,
+      "instruction": "Write the original amount you deposited in this FD.",
+      "rejections": [
+        "Amount contains letters or symbols",
+        "Amount does not match bank records"
+      ]
+    },
+    "LIQ_MODE_FULL": {
+      "title": "Full Liquidation Checkbox",
+      "mandatory": false,
+      "instruction": "Tick this box if you want to withdraw the ENTIRE amount and close the FD completely.",
+      "rejections": [
+        "Ticked together with Partial Liquidation"
+      ]
+    },
+    "LIQ_MODE_PARTIAL": {
+      "title": "Partial Liquidation Checkbox & Amount",
+      "mandatory": false,
+      "instruction": "Tick this box ONLY if you want to withdraw a specific portion of the money. Write the exact amount you want to take out next to it.",
+      "rejections": [
+        "Ticked but amount not specified",
+        "Amount exceeds total balance",
+        "Ticked together with Full Liquidation"
+      ]
+    },
+    "PAYOUT_IDFC": {
+      "title": "Credit to IDFC Bank Account",
+      "mandatory": false,
+      "instruction": "Tick this box to transfer money to your own IDFC First Bank savings account. Write your account number in the space provided.",
+      "rejections": [
+        "Account number missing",
+        "Account number is not an IDFC account"
+      ]
+    },
+    "PAYOUT_OTHER_BANK_NAME": {
+      "title": "Other Bank Name",
+      "mandatory": false,
+      "instruction": "If transferring to a DIFFERENT bank, write the name of that bank here (e.g., 'HDFC Bank').",
+      "rejections": [
+        "Bank name missing when transfer selected"
+      ]
+    },
+    "PAYOUT_OTHER_ACC_NO": {
+      "title": "Other Bank Account Number",
+      "mandatory": false,
+      "instruction": "Write the account number of the other bank where you want the money sent.",
+      "rejections": [
+        "Account number missing when transfer selected",
+        "Account number mismatch with proof"
+      ]
+    },
+    "PAYOUT_OTHER_IFSC": {
+      "title": "IFSC Code",
+      "mandatory": false,
+      "instruction": "Write the 11-character IFSC code of the other bank branch (found on your cheque book).",
+      "rejections": [
+        "IFSC code missing",
+        "Invalid IFSC format (must be 11 characters)"
+      ]
+    },
+    "RD_ACC_NO": {
+      "title": "Recurring Deposit Account Number",
+      "mandatory": false,
+      "instruction": "Fill this only if closing a Recurring Deposit (RD). Write the RD account number here.",
+      "rejections": [
+        "RD Account number missing",
+        "Invalid account number"
+      ]
+    },
+    "RD_PAYOUT_ACC": {
+      "title": "RD Payout Account",
+      "mandatory": false,
+      "instruction": "Write the IDFC Bank account number where the RD money should be credited.",
+      "rejections": [
+        "Payout account number missing"
+      ]
+    },
+    "SIGNATURE_1": {
+      "title": "First Account Holder Signature",
+      "mandatory": true,
+      "instruction": "The primary applicant must sign here. The signature must match the one the bank has on file.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch"
+      ]
+    },
+    "SIGNATURE_2": {
+      "title": "Second Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If there is a joint holder, they must sign here.",
+      "rejections": [
+        "Signature missing for joint account"
+      ]
+    },
+    "SIGNATURE_3": {
+      "title": "Third Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If there is a third holder, they must sign here.",
+      "rejections": [
+        "Signature missing for joint account"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "This section is to be completed by bank officials only, including service request number, employee ID, branch details, and official signature.",
+      "rejections": [
+        "Customer-filled bank-use-only fields"
+      ]
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "form_id": "IDFC_STATEMENT_REQUEST_V2",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Date of Request",
+      "mandatory": true,
+      "instruction": "Enter the date you are submitting this request in DD-MM-YYYY format.\nExample: '25-12-2023'",
+      "rejections": [
+        "Date missing",
+        "Date is in the future"
+      ]
+    },
+    "CUST_ID": {
+      "title": "Customer ID",
+      "mandatory": true,
+      "instruction": "Enter your unique Customer ID.\nExample: '10001234'",
+      "rejections": [
+        "Customer ID missing"
+      ]
+    },
+    "ACCOUNT_NO": {
+      "title": "Account Number",
+      "mandatory": true,
+      "instruction": "Enter the specific Account Number for which you need the statement.\nExample: '100050009000'",
+      "rejections": [
+        "Account number missing",
+        "Account number mismatch with records"
+      ]
+    },
+    "CUST_NAME": {
+      "title": "Customer Name",
+      "mandatory": true,
+      "instruction": "Write your full name as it appears in bank records.\nExample: 'RAJESH KUMAR'",
+      "rejections": [
+        "Name missing"
+      ]
+    },
+    "REQ_TYPE_ADHOC": {
+      "title": "Request Type: Adhoc (Date Range)",
+      "mandatory": false,
+      "instruction": "Tick this box if you want a statement for a specific custom date range (e.g., last 6 months).",
+      "rejections": [
+        "Selected without filling From/To dates",
+        "Both Adhoc and Monthly selected (conflicting)"
+      ]
+    },
+    "ADHOC_FROM_DATE": {
+      "title": "Adhoc: From Date",
+      "mandatory": false,
+      "instruction": "If 'Adhoc' is selected, enter the Start Date.\nExample: '01-04-2023'",
+      "rejections": [
+        "Adhoc selected but From Date missing"
+      ]
+    },
+    "ADHOC_TO_DATE": {
+      "title": "Adhoc: To Date",
+      "mandatory": false,
+      "instruction": "If 'Adhoc' is selected, enter the End Date.\nExample: '31-03-2024'",
+      "rejections": [
+        "Adhoc selected but To Date missing",
+        "To Date is earlier than From Date"
+      ]
+    },
+    "REQ_TYPE_MONTHLY": {
+      "title": "Request Type: Monthly",
+      "mandatory": false,
+      "instruction": "Tick this box if you want a statement for the *current* month only.",
+      "rejections": []
+    },
+    "DELIVERY_EMAIL": {
+      "title": "Delivery: Email",
+      "mandatory": false,
+      "instruction": "Tick this to receive the statement on your registered Email ID.",
+      "rejections": [
+        "No delivery mode selected"
+      ]
+    },
+    "DELIVERY_POST": {
+      "title": "Delivery: Communication Address",
+      "mandatory": false,
+      "instruction": "Tick this to receive a physical copy by post at your registered address.",
+      "rejections": []
+    },
+    "DELIVERY_BRANCH_SELF": {
+      "title": "Delivery: Print at Branch (Self)",
+      "mandatory": false,
+      "instruction": "Tick this if YOU are at the branch and want to collect the printout yourself.",
+      "rejections": []
+    },
+    "DELIVERY_BRANCH_BEARER": {
+      "title": "Delivery: Bearer",
+      "mandatory": false,
+      "instruction": "Tick this if you are sending SOMEONE ELSE (a Bearer) to collect the statement for you.",
+      "rejections": [
+        "Selected but Bearer details missing"
+      ]
+    },
+    "BEARER_NAME": {
+      "title": "Bearer Name",
+      "mandatory": false,
+      "instruction": "If 'Bearer' is selected, write the full name of the person collecting the statement.\nExample: 'AMIT SINGH'",
+      "rejections": [
+        "Bearer selected but Name missing"
+      ]
+    },
+    "BEARER_SIGN": {
+      "title": "Bearer Signature",
+      "mandatory": false,
+      "instruction": "The Bearer must sign here to confirm receipt.",
+      "rejections": [
+        "Bearer selected but Signature missing"
+      ]
+    },
+    "SIGNATURE_1": {
+      "title": "1st Account Holder Signature",
+      "mandatory": true,
+      "instruction": "The primary account holder must sign here. This authorizes the request.",
+      "rejections": [
+        "Signature missing",
+        "Signature mismatch"
+      ]
+    },
+    "SIGNATURE_2": {
+      "title": "2nd Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If the account is joint, the second holder must sign here.",
+      "rejections": [
+        "Joint account but 2nd signature missing"
+      ]
+    },
+    "SIGNATURE_3": {
+      "title": "3rd Account Holder Signature",
+      "mandatory": false,
+      "instruction": "If there is a third holder, they must sign here.",
+      "rejections": []
+    },
+    "BANK_USE": {
+      "title": "Bank Use Section",
+      "mandatory": false,
+      "instruction": "Service request number, employee ID, branch details, and official signature are to be completed by bank staff only.",
+      "rejections": [
+        "Customer filled bank-use-only fields"
+      ]
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "form_id": "IDFC_RELATIONSHIP_FORM_V5",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL_INSTRUCTIONS": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "Fill this form in BLACK INK and CAPITAL LETTERS only. Ensure all mandatory fields are completed.",
+      "rejections": [
+        "Form filled in blue/other ink",
+        "Form not filled in capital letters",
+        "Illegible handwriting"
+      ]
+    },
+    "APP_DATE": {
+      "title": "Application Date",
+      "mandatory": true,
+      "instruction": "Enter the date of submission in DD-MM-YYYY format.",
+      "rejections": [
+        "Date missing",
+        "Future date entered"
+      ]
+    },
+    "CUST_ID": {
+      "title": "Customer ID",
+      "mandatory": false,
+      "instruction": "If you already have a Customer ID with IDFC Bank, enter it here. Otherwise, leave blank.",
+      "rejections": []
+    },
+    "CKYC_NO": {
+      "title": "CKYC Number",
+      "mandatory": false,
+      "instruction": "If you have a Central KYC (CKYC) number, enter it here to link your records.",
+      "rejections": []
+    },
+    "PERSONAL_DETAILS": {
+      "title": "Personal Details",
+      "mandatory": true,
+      "instruction": "Enter your Full Name (as per ID proof), Date of Birth, Gender, and Marital Status.",
+      "rejections": [
+        "Name missing",
+        "Date of Birth missing",
+        "Gender not selected",
+        "Marital status not selected"
+      ]
+    },
+    "BIRTH_DETAILS": {
+      "title": "Place & Country of Birth",
+      "mandatory": true,
+      "instruction": "Enter the City and Country where you were born.",
+      "rejections": [
+        "Place of birth missing",
+        "Country of birth missing"
+      ]
+    },
+    "FATCA_TAX_RESIDENCY": {
+      "title": "Tax Residency (FATCA)",
+      "mandatory": false,
+      "instruction": "Fill this ONLY if you pay taxes in a country other than India. Enter the Country of Tax Residence and your Tax ID Number (TIN).",
+      "rejections": [
+        "Tax resident of foreign country but TIN missing",
+        "Country of residence missing"
+      ]
+    },
+    "FAMILY_DETAILS": {
+      "title": "Family Details",
+      "mandatory": true,
+      "instruction": "Provide at least ONE name: Father's Name, Spouse's Name, or Mother's Name.",
+      "rejections": [
+        "All family name fields left blank"
+      ]
+    },
+    "IDENTITY_DOCS": {
+      "title": "Identity Documents",
+      "mandatory": true,
+      "instruction": "Enter details of the ID proof you are submitting (e.g., Aadhaar, Voter ID, Passport). \nMandatory: You MUST provide a PAN. If you do not have a PAN, you must attach 'Form 60'.",
+      "rejections": [
+        "No ID document details provided",
+        "PAN missing and Form 60 not indicated"
+      ]
+    },
+    "PERMANENT_ADDRESS": {
+      "title": "Permanent Address",
+      "mandatory": true,
+      "instruction": "Enter your address exactly as it appears on your Officially Valid Document (OVD) (e.g., Aadhaar/Passport). Tick the box for the document attached.",
+      "rejections": [
+        "Address does not match attached proof",
+        "Pin code or City missing"
+      ]
+    },
+    "CURRENT_ADDRESS": {
+      "title": "Current / Mailing Address",
+      "mandatory": true,
+      "instruction": "If your current address is different from your permanent address, fill this section. You must attach a 'Deemed OVD' (like a utility bill) as proof. If it is the same, tick 'Same as Above'.",
+      "rejections": [
+        "Address different but proof not attached",
+        "Address details missing when 'Same as Above' is unchecked"
+      ]
+    },
+    "OVERSEAS_ADDRESS": {
+      "title": "Overseas Jurisdiction Address",
+      "mandatory": false,
+      "instruction": "REQUIRED ONLY FOR FOREIGN TAX RESIDENTS. Enter your address in the foreign country.",
+      "rejections": [
+        "Tax resident of foreign country but overseas address missing"
+      ]
+    },
+    "CONTACT_DETAILS": {
+      "title": "Contact Details",
+      "mandatory": true,
+      "instruction": "Enter your Mobile Number and Email ID for bank communication.",
+      "rejections": [
+        "Mobile number missing",
+        "Email ID missing"
+      ]
+    },
+    "OCCUPATION_INFO": {
+      "title": "Occupation Details",
+      "mandatory": true,
+      "instruction": "Tick your Occupation type (e.g., Salaried, Self-Employed, Student). If Salaried, write your Company Name.",
+      "rejections": [
+        "Occupation not selected",
+        "Company name missing for Salaried applicant"
+      ]
+    },
+    "INCOME_INFO": {
+      "title": "Income Details",
+      "mandatory": true,
+      "instruction": "Select your Source of Income (e.g., Salary, Business) and your Gross Annual Income range.",
+      "rejections": [
+        "Source of income not selected",
+        "Income range not selected"
+      ]
+    },
+    "PEP_DECLARATION": {
+      "title": "Politically Exposed Person (PEP)",
+      "mandatory": true,
+      "instruction": "Tick 'Yes' if you are a Politically Exposed Person (e.g., Senior Politician, Govt Official) or related to one. Otherwise, tick 'No'.",
+      "rejections": [
+        "PEP status not selected"
+      ]
+    },
+    "MARKETING_CONSENT": {
+      "title": "Marketing Consent",
+      "mandatory": true,
+      "instruction": "Select 'Yes' or 'No' to indicate if you want the bank to contact you for offers and products.",
+      "rejections": [
+        "Consent option not selected"
+      ]
+    },
+    "SIGNATURE_PHOTO": {
+      "title": "Signature & Photograph",
+      "mandatory": true,
+      "instruction": "Paste a recent colour photograph. Sign ACROSS the photograph and in the signature box below.",
+      "rejections": [
+        "Photograph missing",
+        "Signature missing",
+        "Signature across photo missing"
+      ]
+    },
+    "WITNESS_DETAILS": {
+      "title": "Witness Details",
+      "mandatory": false,
+      "instruction": "REQUIRED ONLY IF THUMB IMPRESSION IS USED. Two witnesses must sign and provide their details.",
+      "rejections": [
+        "Thumb impression used but witness missing"
+      ]
+    },
+    "BANK_USE_ONLY": {
+      "title": "For Bank Use Only",
+      "mandatory": false,
+      "instruction": "To be completed by bank officials for KYC verification, branch details, employee certification, and checker confirmation.",
+      "rejections": [
+        "Customer-filled bank use only section"
+      ]
+    }
+  }
+}

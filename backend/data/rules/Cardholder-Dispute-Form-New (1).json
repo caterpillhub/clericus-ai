@@ -1,0 +1,123 @@
+{
+  "form_id": "IDFC_CARD_DISPUTE_FORM",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "DISPUTE_DATE": {
+      "title": "Date of Application",
+      "mandatory": true,
+      "instruction": "Enter today's date in DD-MM-YYYY format.",
+      "rejections": [
+        "Date is missing",
+        "Date is in the future",
+        "Date format is incorrect"
+      ]
+    },
+    "CARDHOLDER_NAME": {
+      "title": "Cardholder Name",
+      "mandatory": true,
+      "instruction": "Write your full name exactly as it appears on your credit or debit card.",
+      "rejections": [
+        "Name is missing",
+        "Name does not match bank records"
+      ]
+    },
+    "MOBILE_NUMBER": {
+      "title": "Registered Mobile Number",
+      "mandatory": true,
+      "instruction": "Enter the 10-digit mobile number that is linked to your bank account.",
+      "rejections": [
+        "Mobile number is missing",
+        "Number is not 10 digits",
+        "Mobile number is not registered with the bank"
+      ]
+    },
+    "CARD_NUMBER": {
+      "title": "Disputed Card Number",
+      "mandatory": true,
+      "instruction": "Enter the 16-digit number of the card where the incorrect transaction happened.",
+      "rejections": [
+        "Card number is incomplete",
+        "Card number is not 16 digits",
+        "Card number does not match customer records"
+      ]
+    },
+    "DISPUTE_REASON_SELECT": {
+      "title": "Dispute Reason Category",
+      "mandatory": true,
+      "instruction": "Select the option that best describes why you are disputing these charges (e.g., 'Unauthorized transaction', 'Double charge').",
+      "rejections": [
+        "No reason selected"
+      ]
+    },
+    "TRANS_COUNT": {
+      "title": "Number of Disputed Transactions",
+      "mandatory": true,
+      "instruction": "Write the total number of transactions you want to challenge.",
+      "rejections": [
+        "Count is missing",
+        "Count does not match the number of rows filled in the table"
+      ]
+    },
+    "TABLE_TRANS_DATE": {
+      "title": "Transaction Date (Table Column)",
+      "mandatory": true,
+      "instruction": "For each disputed item, enter the date the transaction took place (as shown on your statement).",
+      "rejections": [
+        "Transaction date missing",
+        "Date does not match statement records"
+      ]
+    },
+    "TABLE_MERCHANT_NAME": {
+      "title": "Merchant Name (Table Column)",
+      "mandatory": true,
+      "instruction": "Write the name of the shop, website, or service provider where the transaction happened.",
+      "rejections": [
+        "Merchant name missing"
+      ]
+    },
+    "TABLE_TRANS_AMOUNT": {
+      "title": "Original Transaction Amount (Table Column)",
+      "mandatory": true,
+      "instruction": "Enter the full amount of the transaction in INR.",
+      "rejections": [
+        "Amount missing",
+        "Value contains letters or symbols"
+      ]
+    },
+    "TABLE_DISPUTE_AMOUNT": {
+      "title": "Disputed Amount (Table Column)",
+      "mandatory": true,
+      "instruction": "Enter the specific amount you are disputing. (This is usually the same as the transaction amount, unless you were overcharged only a part of the total).",
+      "rejections": [
+        "Dispute amount missing",
+        "Dispute amount is higher than the original transaction amount"
+      ]
+    },
+    "ADDITIONAL_INFO": {
+      "title": "More Information",
+      "mandatory": false,
+      "instruction": "Provide any extra details that will help the bank understand your case better (e.g., 'I still have my card with me', 'I received an OTP but did not use it').",
+      "rejections": [
+        "Text contains prohibited characters"
+      ]
+    },
+    "DECLARATION_CHECK": {
+      "title": "Declaration Confirmation",
+      "mandatory": true,
+      "instruction": "Check this box to confirm that all the information you provided is true and accurate.",
+      "rejections": [
+        "Declaration not accepted/checked"
+      ]
+    }
+  }
+}

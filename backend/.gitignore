@@ -1,0 +1,9 @@
+/venv
+/tests
+debug_clean_view.png
+test_brain.py
+test_ocr.py
+test_vision.py
+/data/processed
+/data/raw_pdfs
+.vscode

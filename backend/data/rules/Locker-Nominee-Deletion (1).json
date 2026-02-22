@@ -1,0 +1,138 @@
+{
+  "form_id": "IDFC_LOCKER_NOMINEE_DELETION_SL2",
+  "authority": "IDFC FIRST Bank",
+  "sections": {
+    "GLOBAL": {
+      "title": "General Filling Instructions",
+      "mandatory": true,
+      "instruction": "The form must be filled in BLACK ink and in CAPITAL LETTERS. All fields marked with an asterisk (*) are mandatory.",
+      "rejections": [
+        "Form not filled in capital letters",
+        "Form not filled using black ink",
+        "Mandatory fields not filled"
+      ]
+    },
+    "APPLICANT_DETAILS": {
+      "title": "Applicant Name(s) & Address(es)",
+      "mandatory": true,
+      "instruction": "Enter the full name(s) and address(es) of the locker hirer(s) requesting this cancellation.\nExample: 'RAJESH KUMAR, 12 M.G. ROAD, MUMBAI'",
+      "rejections": [
+        "Applicant name missing",
+        "Applicant address missing"
+      ]
+    },
+    "NOMINEE_TO_CANCEL": {
+      "title": "Nominee Name & Address (To be Cancelled)",
+      "mandatory": true,
+      "instruction": "Enter the name and address of the nominee you wish to remove.\nExample: 'SUNITA SHARMA, 45 PARK STREET, DELHI'",
+      "rejections": [
+        "Nominee name missing"
+      ]
+    },
+    "LOCKER_TYPE": {
+      "title": "Type of Locker",
+      "mandatory": true,
+      "instruction": "Specify the size or type of the locker.\nExample: 'SMALL', 'MEDIUM', or 'A-TYPE'",
+      "rejections": [
+        "Locker type missing"
+      ]
+    },
+    "LOCKER_NO": {
+      "title": "Locker Number",
+      "mandatory": true,
+      "instruction": "Enter the specific locker number.\nExample: 'L-105' or 'A-22'",
+      "rejections": [
+        "Locker number missing"
+      ]
+    },
+    "LOCKER_ADDITIONAL_DETAILS": {
+      "title": "Additional Details (If any)",
+      "mandatory": false,
+      "instruction": "Any extra details to identify the locker (optional).\nExample: 'KEY NO. 405'",
+      "rejections": []
+    },
+    "NOMINEE_TABLE_DETAILS": {
+      "title": "Nominee Details (Table)",
+      "mandatory": true,
+      "instruction": "Re-enter the details of the nominee being removed as per the table columns: Name, Address, Contact No, Relationship, and DOB.\nExample: 'SUNITA SHARMA, SPOUSE, 15-08-1980'",
+      "rejections": [
+        "Table details incomplete"
+      ]
+    },
+    "NOMINEE_CUST_ID": {
+      "title": "Nominee Customer ID",
+      "mandatory": false,
+      "instruction": "If the nominee has an IDFC Bank Customer ID, enter it here.\nExample: '10002345'",
+      "rejections": []
+    },
+    "PLACE": {
+      "title": "Place",
+      "mandatory": true,
+      "instruction": "Enter the city where you are signing this form.\nExample: 'MUMBAI'",
+      "rejections": [
+        "Place missing"
+      ]
+    },
+    "DATE": {
+      "title": "Date",
+      "mandatory": true,
+      "instruction": "Enter the date of submission in DD-MM-YYYY format.\nExample: '25-12-2023'",
+      "rejections": [
+        "Date missing",
+        "Date is in the future"
+      ]
+    },
+    "SIGNATURE_1": {
+      "title": "Signature of 1st Holder",
+      "mandatory": true,
+      "instruction": "The primary hirer must sign here.",
+      "rejections": [
+        "Signature missing"
+      ]
+    },
+    "SIGNATURE_2": {
+      "title": "Signature of 2nd Holder",
+      "mandatory": false,
+      "instruction": "If the locker is held jointly, the 2nd holder must sign here.",
+      "rejections": [
+        "Joint account but 2nd signature missing"
+      ]
+    },
+    "SIGNATURE_3": {
+      "title": "Signature of 3rd Holder",
+      "mandatory": false,
+      "instruction": "If the locker is held by three people, the 3rd holder must sign here.",
+      "rejections": []
+    },
+    "WITNESS_1": {
+      "title": "Witness 1 Name & Address",
+      "mandatory": false,
+      "instruction": "REQUIRED if using Thumb Impression. Enter Witness 1's Name, Address, and Signature.\nExample: 'AMIT SINGH, ANDHERI WEST'",
+      "rejections": [
+        "Thumb impression used but Witness 1 missing"
+      ]
+    },
+    "WITNESS_2": {
+      "title": "Witness 2 Name & Address",
+      "mandatory": false,
+      "instruction": "REQUIRED if using Thumb Impression. Enter Witness 2's Name, Address, and Signature.",
+      "rejections": [
+        "Thumb impression used but Witness 2 missing"
+      ]
+    },
+    "BANK_USE_BRANCH": {
+      "title": "Branch Name (Bank Use)",
+      "mandatory": false,
+      "instruction": "Bank Official Use Only: Enter Branch Name.\nExample: 'NARIMAN POINT BRANCH'",
+      "rejections": [
+        "Applicant filled Bank Use section"
+      ]
+    },
+    "BANK_USE_CABINET_ID": {
+      "title": "Cabinet ID (Bank Use)",
+      "mandatory": false,
+      "instruction": "Bank Official Use Only: Enter Cabinet ID.\nExample: 'CAB-001'",
+      "rejections": []
+    }
+  }
+}
