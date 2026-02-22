@@ -11,46 +11,52 @@ interface ChatSession {
   title: string
   date: Date
   preview: string
+  sessionId: string
+  extractedText: string
   messages: Array<{ role: string; content: string }>
 }
 
 export function App() {
   const [currentView, setCurrentView] = useState<'home' | 'chat'>('home')
-  const [initialMessage, setInitialMessage] = useState('')
-  // history panel open state; start closed to avoid flash on reload
+
   const [isHistoryOpen, setIsHistoryOpen] = useState(false)
-  // collapse state (mini sidebar) controlled by UI toggle
   const [isHistoryCollapsed, setIsHistoryCollapsed] = useState(false)
   const [isSettingsOpen, setIsSettingsOpen] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(true)
-  const [sessions, setSessions] = useState<ChatSession[]>([])
 
-  const handleStartChat = (message: string) => {
-    // when starting chat, switch to chat view and open history
+  const [sessions, setSessions] = useState<ChatSession[]>([])
+  const [activeSessionId, setActiveSessionId] = useState<string | null>(null)
+
+  const activeSession = sessions.find(s => s.id === activeSessionId) || null
+
+  // 🔥 DOCUMENT PROCESSED (ENTRY POINT TO CHAT)
+  const handleDocumentProcessed = (
+    sessionId: string,
+    extractedText: string,
+    analysis: string
+  ) => {
+    const newSession: ChatSession = {
+      id: `session-${Date.now()}`,
+      title: analysis?.substring(0, 40) || 'Form Session',
+      date: new Date(),
+      preview: analysis?.substring(0, 100) || '',
+      sessionId,
+      extractedText,
+      messages: [],
+    }
+
+    setSessions(prev => [newSession, ...prev])
+    setActiveSessionId(newSession.id)
     setCurrentView('chat')
     setIsHistoryOpen(true)
     setIsHistoryCollapsed(false)
-    // Create a new session
-    const newSession: ChatSession = {
-      id: `session-${Date.now()}`,
-      title: message.substring(0, 50) || 'New Chat',
-      date: new Date(),
-      preview: message.substring(0, 100),
-      messages: [{ role: 'user', content: message }],
-    }
-    
-    setSessions((prev) => [newSession, ...prev])
-    setInitialMessage(message)
   }
 
   const handleBackToHome = () => {
     setCurrentView('home')
-    setInitialMessage('')
-    // hide history when returning home
     setIsHistoryOpen(false)
   }
 
-  // ensure panel only opens automatically on chat view
   useEffect(() => {
     if (currentView === 'chat') {
       setIsHistoryOpen(true)
@@ -60,33 +66,24 @@ export function App() {
     }
   }, [currentView])
 
-  // when panel re‑opens ensure it's expanded (still useful for manual reopen)
-  useEffect(() => {
-    if (isHistoryOpen && isHistoryCollapsed) {
-      setIsHistoryCollapsed(false)
-    }
-  }, [isHistoryOpen])
-
   const handleNewChat = () => {
     setCurrentView('home')
-    setInitialMessage('')
-    setIsHistoryOpen(false)
+    setActiveSessionId(null)
   }
 
   const handleSelectSession = (sessionId: string) => {
-    // ensure we are on chat view and panel visible
+    setActiveSessionId(sessionId)
     setCurrentView('chat')
     setIsHistoryOpen(true)
     setIsHistoryCollapsed(false)
-
-    const session = sessions.find(s => s.id === sessionId)
-    if (session) {
-      setInitialMessage(session.messages[0]?.content || '')
-    }
   }
 
   const handleDeleteSession = (sessionId: string) => {
-    setSessions(sessions.filter(s => s.id !== sessionId))
+    setSessions(prev => prev.filter(s => s.id !== sessionId))
+    if (activeSessionId === sessionId) {
+      setCurrentView('home')
+      setActiveSessionId(null)
+    }
   }
 
   const handleToggleDarkMode = () => {
@@ -105,19 +102,19 @@ export function App() {
     <>
       {currentView === 'home' ? (
         <>
-          <Homepage 
-            onStartChat={handleStartChat}
+          <Homepage
+            onDocumentProcessed={handleDocumentProcessed}
             onOpenHistory={() => {
               setIsHistoryOpen(true)
               setIsHistoryCollapsed(false)
             }}
             onOpenSettings={() => setIsSettingsOpen(true)}
           />
-          {/* overlay panel on homepage, fixed positioning handled by component */}
+
           <ChatHistoryPanel
             isOpen={isHistoryOpen}
             isCollapsed={isHistoryCollapsed}
-            onToggleCollapse={() => setIsHistoryCollapsed((p) => !p)}
+            onToggleCollapse={() => setIsHistoryCollapsed(p => !p)}
             onClose={() => setIsHistoryOpen(false)}
             sessions={sessions}
             onSelectSession={handleSelectSession}
@@ -133,7 +130,7 @@ export function App() {
           <ChatHistoryPanel
             isOpen={isHistoryOpen}
             isCollapsed={isHistoryCollapsed}
-            onToggleCollapse={() => setIsHistoryCollapsed((p) => !p)}
+            onToggleCollapse={() => setIsHistoryCollapsed(p => !p)}
             onClose={() => setIsHistoryOpen(false)}
             sessions={sessions}
             onSelectSession={handleSelectSession}
@@ -143,20 +140,14 @@ export function App() {
             onGoHome={handleBackToHome}
             inChatView={true}
           />
+
           <div className="flex-1">
-            <ChatInterface 
-              onBack={handleBackToHome} 
-              initialMessage={initialMessage}
-              isHistoryOpen={isHistoryOpen}
-              isHistoryCollapsed={isHistoryCollapsed}
-              onToggleHistoryCollapse={() => setIsHistoryCollapsed((p) => !p)}
-              onToggleHistoryOpen={() => setIsHistoryOpen((p) => !p)}
-              onOpenSettings={() => setIsSettingsOpen(true)}
-              sessions={sessions}
-              onSelectSession={handleSelectSession}
-              onNewChat={handleNewChat}
-              onDeleteSession={handleDeleteSession}
-            />
+            {activeSession && (
+              <ChatInterface
+                sessionId={activeSession.sessionId}
+                extractedText={activeSession.extractedText}
+              />
+            )}
           </div>
         </div>
       )}

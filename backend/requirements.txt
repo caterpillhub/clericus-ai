@@ -6,3 +6,7 @@ ollama
 pillow
 numpy
 watchdog
+fastapi
+uvicorn
+python-multipart
+pydantic
