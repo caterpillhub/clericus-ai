@@ -146,6 +146,7 @@ export function App() {
               <ChatInterface
                 sessionId={activeSession.sessionId}
                 extractedText={activeSession.extractedText}
+                onOpenSettings={() => setIsSettingsOpen(true)}
               />
             )}
           </div>
